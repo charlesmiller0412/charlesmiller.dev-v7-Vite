@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #efefef;
+}
+
+body .dark {
+    background-color: #12252b;
+}
+
+main {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+.navbar__links a:hover {
+    cursor: pointer;
+}
+
+.tooltip {
+    color: #f1f1f1;
+    position: relative;
+    background-color: #384b52;
+    border-radius: 100%;
+    cursor: help;
+    text-align: center;
+}
+
+.tooltip::after {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: all ease 0.3s;
+    content: attr(data-tooltip);
+    background: rgba(0, 0, 0, 1);
+    bottom: -1.3rem;
+    min-width: 4rem;
+    margin-left: -2.5rem;
+    border-radius: 0.4rem;
+    padding: 0.25rem 0.5rem;
+    z-index: 1;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+.tooltip__tall:hover::after {
+    margin-left: -4rem;
+    bottom: -2.25rem;
+    width: 8rem;
+}
+
+.swal2-popup button {
+    background-color: #7eaecd !important;
+}
+.swal2-popup button:focus {
+    box-shadow: none;
+}
+
+.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px #a1dcf0 !important;
+}
+
+@layer components {
+    section {
+        @apply w-screen tablet:w-[calc(100%-7rem)] h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+    }
+    .btn {
+        @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
+    }
+
+    .btn__light--blue {
+        @apply bg-none dark:text-offWhite hover:bg-blue shadow-[4px_4px_0_0_rgba(0,0,0,1)] dark:shadow-[4px_4px_0_0_rgba(255,255,255,1)];
+    }
+
+    .btn__light--black {
+        @apply bg-none text-offBlack dark:text-offWhite hover:text-offBlack hover:bg-offBlack border border-offBlack shadow-[4px_4px_0_0_rgba(56,75,82,1)];
+    }
+
+    .cardBtn {
+        @apply rounded-[.4rem] text-xs font-regular my-[.8rem] py-[.5rem] px-[3rem] transition-all whitespace-nowrap w-fit;
+    }
+    .cardBtn__light {
+        @apply bg-blue text-black border border-black hover:bg-lightBlue hover:text-offBlack;
+    }
+
+    .cardBtn__dark {
+        @apply bg-black text-lightBlue border border-lightBlue hover:bg-offBlack;
+    }
+
+    .headings--h2 {
+        @apply text-black mb-8 tablet:mb-0 dark:text-white text-xl font-bold leading-[4rem] landscape:leading-[6.6rem];
+    }
+
+    .headings__left--h5 {
+        @apply relative text-offBlack font-medium leading-lg uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue dark:before:bg-offWhite before:absolute before:bottom-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem] dark:text-blue;
+    }
+
+    .headings__right--h5 {
+        @apply relative text-offBlack font-medium leading-lg uppercase tracking-[.75rem] after:content-[''] after:w-[1.6rem] after:h-[.2rem] after:bg-blue dark:after:bg-offWhite after:absolute after:bottom-1/2 after:right-0 after:-translate-y-1/2 pr-[2.6rem] dark:text-blue;
+    }
+
+    .sun {
+        @apply text-xl text-white;
+    }
+    .moon {
+        @apply text-xl text-black;
+    }
+    h4 {
+        @apply text-sm text-blue capitalize font-medium;
+    }
+    .box {
+        @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];
+    }
+    .boxInside {
+        @apply h-[98%] w-[98%] absolute top-0 right-0;
+    }
+}
