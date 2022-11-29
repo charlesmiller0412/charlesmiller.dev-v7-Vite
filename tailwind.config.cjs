@@ -46,9 +46,9 @@ module.exports = {
             },
             backgroundImage: {
                 "hero-image-dark":
-                    "linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+                    "linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('./src/assets/hero/heroBg.jpg')",
                 "hero-image-light":
-                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(239, 239, 239) 99%), url('https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(239, 239, 239) 99%), url('./src/assets/hero/heroBg.jpg')",
             },
         },
     },

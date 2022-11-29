@@ -11,10 +11,19 @@ export const Hero = (props: any) => {
             id="hero"
         >
             <div className="hero__main font-medium text-md tablet:text-lg uppercase text-center text--offBlack dark:text-offWhite tracking-widest row-span-2 self-end">
-                <div className="text-lightBlue">hello, world!</div>
-                <div className="text-lg tablet:text-xl font-semiBold tracking-wider">
-                    I'm <h1 className="inline">Charles Miller</h1>
+                <div className="text-lightBlue">
+                    hello, world! <br />
                 </div>
+
+                <h1 className="inline">
+                    <span className="block">I'm</span>
+                    <span className="shadow-left text-lg tablet:text-xl font-semiBold tracking-widest">
+                        Charles
+                    </span>{" "}
+                    <span className="shadow-right text-lg tablet:text-xl font-semiBold tracking-widest">
+                        Miller
+                    </span>
+                </h1>
                 <div className="font-light">
                     Front-end developer | UX/UI Designer
                 </div>

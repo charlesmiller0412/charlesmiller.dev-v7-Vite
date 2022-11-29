@@ -60,7 +60,7 @@ export const Blog = (props: any) => {
                 rel="noopener noreferrer"
             >
                 <Button
-                    className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center my-10 mx-auto bg-blue border-2 hover:bg-offWhite"
+                    className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center my-10 mx-auto bg-blue border-2 hover:bg-offBlack"
                     text="View my blog & social media site"
                     icon={faAnglesRight}
                 />

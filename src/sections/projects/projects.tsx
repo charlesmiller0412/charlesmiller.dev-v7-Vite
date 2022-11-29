@@ -34,7 +34,6 @@ export const Projects = (props: any) => {
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />
                 ))}
-
                 <a
                     href="https://charlesmiller.dev/projectDatabase"
                     target="__blank"

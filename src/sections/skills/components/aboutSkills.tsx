@@ -37,10 +37,11 @@ import StackOverflow from "../../../assets/icons/StackOverflow.png";
 
 export const AboutSkills = () => {
     return (
-        <div className="aboutSkills grid tablet:mt-0 tablet:gap-28 desktop:gap-64 mx-auto grid-cols-1 desktop:grid-cols-2">
+        <div className="aboutSkills grid tablet:mt-0 gap-20 desktop:gap-64 mx-auto grid-cols-1 desktop:grid-cols-2">
             <div>
                 <h4 className="text-center mb-5">experienced in</h4>
-                <div className="experience flex gap-5 flex-wrap tablet:inline-grid tablet:grid-cols-11 tablet:w-full tablet:gap-3">
+                <div className="experience grid grid-rows-2 grid-flow-col w-full tablet:w-3/4 gap-5 justify-center tablet:mx-auto">
+                    {/* <div className="experience flex gap-5 flex-wrap tablet:inline-grid tablet:grid-cols-11 tablet:w-3/4 desktop:w-full tablet:gap-3"> */}
                     <span
                         className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="HTML"
@@ -171,7 +172,7 @@ export const AboutSkills = () => {
             </div>
             <div>
                 <h4 className="text-center mb-5">tools i use</h4>
-                <div className="tools flex gap-5 flex-wrap tablet:inline-grid tablet:grid-cols-11 tablet:w-full tablet:gap-3">
+                <div className="tools grid grid-rows-2 grid-flow-col w-full tablet:w-3/4 gap-5 justify-center tablet:mx-auto">
                     <span
                         className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="VS Code"

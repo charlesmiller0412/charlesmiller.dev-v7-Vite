@@ -73,9 +73,25 @@ main {
     box-shadow: 0 0 0 3px #a1dcf0 !important;
 }
 
+.shadow-right {
+    text-shadow: 5px 3px 0px rgb(18, 37, 43),
+        8px 4px 0px rgba(255, 255, 255, 0.15);
+}
+
+.shadow-left {
+    text-shadow: -5px 3px 0px rgb(18, 37, 43),
+        -8px 4px 0px rgba(255, 255, 255, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #main {
+        transition: none;
+    }
+}
+
 @layer components {
     section {
-        @apply w-screen tablet:w-[calc(100%-7rem)] h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+        @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
     .btn {
         @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;

@@ -70,7 +70,7 @@ function App() {
                 className="overflow-x-hidden dark bg-offWhite dark:bg-black flex motion-reduce:transition-none"
                 id="main"
             >
-                <div className="hidden landscape:flex landscape:w-[rem]">
+                <div className="hidden landscape:flex landscape:w-[7rem]">
                     <Navbar theme={theme} setTheme={setTheme} />
                 </div>
                 <div className="w-full">

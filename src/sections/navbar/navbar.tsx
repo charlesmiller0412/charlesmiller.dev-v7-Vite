@@ -5,6 +5,7 @@ import { ThemeToggle } from "./components/themeToggle";
 import { ResumeBtn } from "./components/resumeBtn";
 import { useLoaded } from "../../hooks/useLoaded";
 import { SocialLinks } from "../hero/components/social";
+
 export const Navbar = (props: any) => {
     const loaded = useLoaded();
 

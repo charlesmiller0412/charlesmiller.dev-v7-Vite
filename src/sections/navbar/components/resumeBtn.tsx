@@ -4,7 +4,7 @@ export const ResumeBtn = (props: any) => {
             onClick={() => {
                 window.location.href =
                     "https://charlesmiller.dev/" +
-                    process.env.REACT_APP_CURRENT_RESUME;
+                    import.meta.env.VITE_CURRENT_RESUME;
             }}
             className={
                 props.className +
