@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHouse,
@@ -8,13 +8,22 @@ import {
     faFileLines,
     faPen,
 } from "@fortawesome/free-solid-svg-icons";
+import $ from "jquery";
+import useNavScroll from "../../../hooks/useNavScroll";
 
 export const NavLinks = () => {
+    const activeLink = useNavScroll();
+
     return (
         <div className="navbar__links flex flex-col gap-[3rem] overflow-hidden font-medium justify-start">
             <a
                 href="#hero"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                id="heroLink"
+                className={
+                    activeLink == "heroLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faHouse}
@@ -24,7 +33,11 @@ export const NavLinks = () => {
             </a>
             <a
                 href="#projects"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                className={
+                    activeLink == "projectLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faBriefcase}
@@ -34,7 +47,11 @@ export const NavLinks = () => {
             </a>
             <a
                 href="#skills"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                className={
+                    activeLink == "skillsLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faListCheck}
@@ -44,7 +61,11 @@ export const NavLinks = () => {
             </a>
             <a
                 href="#about"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                className={
+                    activeLink == "aboutLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faUser}
@@ -54,7 +75,11 @@ export const NavLinks = () => {
             </a>
             <a
                 href="#blog"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                className={
+                    activeLink == "blogLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faFileLines}
@@ -64,7 +89,11 @@ export const NavLinks = () => {
             </a>
             <a
                 href="#contact"
-                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                className={
+                    activeLink == "contactLink"
+                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                }
             >
                 <FontAwesomeIcon
                     icon={faPen}

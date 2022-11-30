@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import {
     faGithub,
     faLinkedin,
@@ -7,6 +6,7 @@ import {
     faPinterest,
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 export const SocialLinks = (props: any) => {
     return (
         <div className={props.className}>
@@ -14,7 +14,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.github.com/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -22,7 +22,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.linkedin.com/in/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -30,7 +30,7 @@ export const SocialLinks = (props: any) => {
                 href="https://twitter.com/millersWebDev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -38,7 +38,7 @@ export const SocialLinks = (props: any) => {
                 href="https://pinterest.com/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faPinterest} />
             </a>
@@ -46,7 +46,7 @@ export const SocialLinks = (props: any) => {
                 href="https://instagram.com/millerswebdev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -54,9 +54,9 @@ export const SocialLinks = (props: any) => {
                 href="mailto:charles@charlesmiller.dev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-blue hover:text-lightBlue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
-                <FontAwesomeIcon icon={faPaperPlane} />
+                <FontAwesomeIcon icon={faAt} />
             </a>
         </div>
     );

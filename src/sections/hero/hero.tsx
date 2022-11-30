@@ -6,7 +6,7 @@ export const Hero = (props: any) => {
     return (
         // w-full pt-[11rem] landscape:justify-center landscape:pt-0 max-w-[120rem] m-auto h-screen pb-52 px-10 landscape:tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly landscape:flex-row landscape:h-full tablet:landscape:h-screen gap-10 tablet:gap-0
         <section
-            className="hero w-full m-auto h-screen grid place-items-center before:bg-hero-image-light dark:before:bg-hero-image-dark before:bg-no-repeat before:bg-cover before:w-full before:overflow-hidden before:h-screen before:absolute before:-z-10 relative z-10 grid-rows-3 gap-20 grid-cols-1 py-0 tablet:py-10 landscape:py-10"
+            className="hero w-full m-auto portrait:h-[calc(100vh-5rem)] h-[calc(100vh-5rem)] tablet:h-screen landscape:h-screen grid place-items-center before:bg-hero-image-light dark:before:bg-hero-image-dark before:bg-no-repeat before:bg-cover before:w-full before:overflow-hidden before:h-screen before:absolute before:-z-10 relative z-10 grid-rows-3 gap-20 grid-cols-1 py-0 tablet:py-10 landscape:py-10"
             // className="hero h-screen  flex flex-col landscape:flex-row items-center gap-10 pt-[7.5rem]"
             id="hero"
         >
@@ -15,14 +15,11 @@ export const Hero = (props: any) => {
                     hello, world! <br />
                 </div>
 
-                <h1 className="inline">
-                    <span className="block">I'm</span>
-                    <span className="shadow-left text-lg tablet:text-xl font-semiBold tracking-widest">
-                        Charles
-                    </span>{" "}
-                    <span className="shadow-right text-lg tablet:text-xl font-semiBold tracking-widest">
-                        Miller
+                <h1 className="text-lg tablet:text-xl font-semiBold tracking-widest">
+                    <span className="text-lg tablet:text-xl font-semiBold tracking-widest mr-5">
+                        I'm
                     </span>
+                    Charles Miller
                 </h1>
                 <div className="font-light">
                     Front-end developer | UX/UI Designer

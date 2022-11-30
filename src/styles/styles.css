@@ -50,6 +50,10 @@ main {
     border-radius: 0.4rem;
     padding: 0.25rem 0.5rem;
     z-index: 1;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
 }
 
 .tooltip:hover::after {
@@ -73,20 +77,20 @@ main {
     box-shadow: 0 0 0 3px #a1dcf0 !important;
 }
 
-.shadow-right {
-    text-shadow: 5px 3px 0px rgb(18, 37, 43),
-        8px 4px 0px rgba(255, 255, 255, 0.15);
+.shadow-right-dark {
+    text-shadow: 3px 2px 0px rgba(255, 255, 255, 0.85), 6px 3px 0px #384b52;
 }
 
-.shadow-left {
-    text-shadow: -5px 3px 0px rgb(18, 37, 43),
-        -8px 4px 0px rgba(255, 255, 255, 0.15);
+.shadow-left-dark {
+    text-shadow: -3px 2px 0px rgba(255, 255, 255, 0.85), -6px 3px 0px #384b52;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #main {
-        transition: none;
-    }
+.shadow-right-light {
+    text-shadow: 5px 3px 0px #efefef, 8px 4px 0px rgba(255, 255, 255, 0.15);
+}
+
+.shadow-left-light {
+    text-shadow: -5px 3px 0px #efefef, -8px 4px 0px rgba(255, 255, 255, 0.15);
 }
 
 @layer components {

@@ -1,15 +1,18 @@
 import { SocialLinks } from "../../../hero/components/social";
 import { MobileLogo } from "../components/mobileLogo";
 import { ResumeBtn } from "../../components/resumeBtn";
+import useNavScroll from "../../../../hooks/useNavScroll";
 
 export const MobileMenu = (props: any) => {
+    const activeLink = useNavScroll();
+
     return (
         <>
             <div
                 className={
                     props.showMenu === true
-                        ? "mobileMenu fixed top-0 left-0 w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:pt-0 landscape:flex-row landscape:text-left landscape:top-0 landscape:h-full opacity-100"
-                        : "mobileMenu fixed top-0 left-[200%] w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:flex-row landscape:text-left landscape:-top-[200%] landscape:left-0"
+                        ? "mobileMenu fixed top-0 left-0 w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center duration-1000 text-black dark:text-white pt-[7vh] landscape:pt-0 landscape:flex-row landscape:text-left landscape:top-0 landscape:h-full opacity-100"
+                        : "mobileMenu fixed top-0 left-[200%] w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center duration-1000 text-black dark:text-white pt-[7vh] landscape:flex-row landscape:text-left landscape:-top-[200%] landscape:left-0"
                 }
             >
                 <ul className="">
@@ -18,7 +21,11 @@ export const MobileMenu = (props: any) => {
                             // eslint-disable-next-line jsx-a11y/anchor-is-valid
                             <a
                                 href="#"
-                                className="text-md font-bold hover:text-blue"
+                                className={
+                                    activeLink == "heroLink"
+                                        ? "text-md font-bold hover:text-blue text-blue"
+                                        : "text-md font-bold hover:text-blue"
+                                }
                                 onClick={props.handleClick}
                             >
                                 Home
@@ -28,7 +35,11 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#projects"
-                            className="text-md font-bold hover:text-blue"
+                            className={
+                                activeLink == "projectLink"
+                                    ? "text-md font-bold hover:text-blue text-blue"
+                                    : "text-md font-bold hover:text-blue"
+                            }
                             onClick={props.handleClick}
                         >
                             My Work
@@ -37,7 +48,11 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#skills"
-                            className="text-md font-bold hover:text-blue"
+                            className={
+                                activeLink == "skillsLink"
+                                    ? "text-md font-bold hover:text-blue text-blue"
+                                    : "text-md font-bold hover:text-blue"
+                            }
                             onClick={props.handleClick}
                         >
                             My Specialties
@@ -46,7 +61,11 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#about"
-                            className="text-md font-bold hover:text-blue"
+                            className={
+                                activeLink == "aboutLink"
+                                    ? "text-md font-bold hover:text-blue text-blue"
+                                    : "text-md font-bold hover:text-blue"
+                            }
                             onClick={props.handleClick}
                         >
                             About Me
@@ -55,7 +74,11 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#blog"
-                            className="text-md font-bold hover:text-blue"
+                            className={
+                                activeLink == "blogLink"
+                                    ? "text-md font-bold hover:text-blue text-blue"
+                                    : "text-md font-bold hover:text-blue"
+                            }
                             onClick={props.handleClick}
                         >
                             Latest Blogs
@@ -64,7 +87,11 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#contact"
-                            className="text-md font-bold hover:text-blue"
+                            className={
+                                activeLink == "contactLink"
+                                    ? "text-md font-bold hover:text-blue text-blue"
+                                    : "text-md font-bold hover:text-blue"
+                            }
                             onClick={props.handleClick}
                         >
                             Contact Me
