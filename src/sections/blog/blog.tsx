@@ -90,9 +90,7 @@ export const Blog = () => {
     return (
         <section id="blog" className="blog w-full">
             <Headings
-                h5className="headings__right--h5 text-end text-sm"
-                h2className="headings--h2 text-lg text-end tablet:text-xl"
-                h5="My Discussions"
+                h2className="headings--h2 headings__right--h2 text-lg text-end"
                 h2="Blog"
             />
             {content}

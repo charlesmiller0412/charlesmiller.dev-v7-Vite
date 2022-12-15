@@ -15,10 +15,8 @@ export const Skills = () => {
         <section className="skills" id="skills">
             <Headings
                 className="w-full flex flex-col items-end mb-5 tablet:mb-[5rem]"
-                h2="Skills"
-                h5="My Specialties"
-                h5className="headings__right--h5 text-sm"
-                h2className="headings--h2 text-lg tablet:text-xl"
+                h2="My Skills"
+                h2className="headings--h2 headings__right--h2 text-lg"
             />
             <div className="skills__container grid grid-cols-1 landscape:grid-cols-2 landscape:desktop:grid-cols-3 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-20 gap-5 place-items-center max-w-[120rem] m-auto">
                 <SkillsCard

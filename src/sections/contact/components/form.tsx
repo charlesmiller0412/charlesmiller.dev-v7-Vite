@@ -37,14 +37,14 @@ export const Form = (props: any) => {
                 <Button
                     type="reset"
                     text="Clear"
-                    className="btn btn__light--blue border-2 whitespace-nowrap py-2 w-full dark:bg-black dark:hover:bg-offBlack"
+                    className="btn btn__secondary border-2 whitespace-nowrap py-2 w-full"
                     icon={faAnglesRight}
                 />
                 <Button
                     type="submit"
                     text="Submit"
                     value="submit"
-                    className="btn btn__light--blue border-2 whitespace-nowrap py-2 w-full"
+                    className="btn btn__primary border-2 whitespace-nowrap py-2 w-full dark:bg-black"
                     icon={faAnglesRight}
                 />
             </div>

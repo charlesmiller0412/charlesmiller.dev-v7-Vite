@@ -49,11 +49,9 @@ export const Projects = (props: any) => {
     }
     return (
         <section className="projects" id="projects">
-            <div className="projects__heading flex justify-between items-center tablet:mb-[5rem]">
+            <div className="projects__heading headings__left--h2 flex justify-between items-center tablet:mb-[5rem]">
                 <Headings
-                    h5className="headings__left--h5 text-sm"
-                    h2className="headings--h2 text-lg tablet:text-xl text-black dark:text-white"
-                    h5="My work"
+                    h2className="headings--h2 text-lg text-black dark:text-white"
                     h2="Featured Projects"
                 />
             </div>

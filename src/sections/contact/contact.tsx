@@ -43,9 +43,7 @@ export const Contact = () => {
             id="contact"
         >
             <Headings
-                h5className="headings__left--h5 text-start text-sm"
-                h2className="headings--h2 text-lg text-start tablet:text-xl"
-                h5="hire me"
+                h2className="headings--h2 headings__left--h2 text-lg text-start"
                 h2="Contact"
             />
             <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white">

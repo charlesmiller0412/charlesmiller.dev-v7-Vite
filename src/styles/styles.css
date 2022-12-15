@@ -101,12 +101,12 @@ main {
         @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
     }
 
-    .btn__light--blue {
-        @apply bg-none dark:text-offWhite hover:bg-blue shadow-[4px_4px_0_0_rgba(0,0,0,1)] dark:shadow-[4px_4px_0_0_rgba(255,255,255,1)];
+    .btn__primary {
+        @apply bg-blue dark:bg-offBlack dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
     }
 
-    .btn__light--black {
-        @apply bg-none text-offBlack dark:text-offWhite hover:text-offBlack hover:bg-offBlack border border-offBlack shadow-[4px_4px_0_0_rgba(56,75,82,1)];
+    .btn__secondary {
+        @apply bg-none dark:bg-none dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
     }
 
     .cardBtn {
@@ -121,15 +121,15 @@ main {
     }
 
     .headings--h2 {
-        @apply text-black mb-8 tablet:mb-0 dark:text-white text-xl font-bold leading-[4rem] landscape:leading-[6.6rem];
+        @apply text-black mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem];
     }
 
-    .headings__left--h5 {
-        @apply relative text-offBlack font-medium leading-lg uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue dark:before:bg-offWhite before:absolute before:bottom-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem] dark:text-blue;
+    .headings__left--h2 {
+        @apply text-offBlack mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem] relative uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue before:absolute before:bottom-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem];
     }
 
-    .headings__right--h5 {
-        @apply relative text-offBlack font-medium leading-lg uppercase tracking-[.75rem] after:content-[''] after:w-[1.6rem] after:h-[.2rem] after:bg-blue dark:after:bg-offWhite after:absolute after:bottom-1/2 after:right-0 after:-translate-y-1/2 pr-[2.6rem] dark:text-blue;
+    .headings__right--h2 {
+        @apply relative text-offBlack mb-8 tablet:mb-0 font-bold leading-[4rem] landscape:leading-[6.6rem] uppercase tracking-[.75rem] after:content-[''] after:w-[1.6rem] after:h-[.2rem] after:bg-blue after:absolute after:bottom-1/2 after:right-0 after:-translate-y-1/2 pr-[2.6rem] dark:text-white;
     }
 
     .sun {

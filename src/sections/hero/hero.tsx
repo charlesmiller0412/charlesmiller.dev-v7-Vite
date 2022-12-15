@@ -27,21 +27,21 @@ export const Hero = (props: any) => {
                 <div className="hero__buttons grid grid-cols-2 desktop:gap-36 mt-10 desktop:mt-20">
                     <a href="#projects">
                         <Button
-                            className="btn btn__light--blue w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
+                            className="btn btn__primary w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
                             text="See my work"
                             icon={faAnglesRight}
                         />
                     </a>
                     <a href="#contact">
                         <Button
-                            className="btn btn__light--blue w-[12rem] hover:bg-blue tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
+                            className="btn btn__secondary w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
                             text="Contact Me"
                             icon={faAnglesRight}
                         />
                     </a>
                 </div>
             </div>
-            <div className="hero__bottom self-center row-span-1 tablet:self-end landscape:self-end justify-self-center">
+            <div className="hero__bottom self-center row-span-2 tablet:self-end landscape:self-center justify-self-center">
                 <ProjectCarousel projects={props.projects} />
             </div>
         </section>
