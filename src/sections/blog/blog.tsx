@@ -96,7 +96,7 @@ export const Blog = () => {
                 h2="Blog"
             />
             {content}
-            <a
+            {/* <a
                 href="https://charlesmiller.tech"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -106,7 +106,7 @@ export const Blog = () => {
                     text="View my blog & social media site"
                     icon={faAnglesRight}
                 />
-            </a>
+            </a> */}
         </section>
     );
 };
