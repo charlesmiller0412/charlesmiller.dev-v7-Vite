@@ -1208,6 +1208,14 @@ h4 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1608,16 +1616,16 @@ h4 {
   font-size: 1rem;
 }
 
-.text-md {
-  font-size: 2.2rem;
-}
-
 .text-base {
   font-size: 1.6rem;
 }
 
 .text-icons {
   font-size: 3.5rem;
+}
+
+.text-md {
+  font-size: 2.2rem;
 }
 
 .text-\[2\.4rem\] {
@@ -1889,7 +1897,7 @@ main {
 
 .before\:bg-hero-image-light::before {
   content: var(--tw-content);
-  background-image: linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(239, 239, 239) 99%), url('./src/assets/hero/heroBg.jpg');
+  background-image: linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(239, 239, 239) 99%), url('./src/assets/hero/heroBg.png');
 }
 
 .before\:bg-cover::before {
@@ -2054,17 +2062,12 @@ main {
 
 .dark .dark\:before\:bg-hero-image-dark::before {
   content: var(--tw-content);
-  background-image: linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('./src/assets/hero/heroBg.jpg');
+  background-image: linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('./src/assets/hero/heroBg.webp');
 }
 
 .dark .dark\:hover\:bg-offBlack:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(56 75 82 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:hover\:bg-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 174 205 / var(--tw-bg-opacity));
 }
 
 .dark .hover\:dark\:text-blue:hover {
@@ -2270,12 +2273,12 @@ main {
     text-align: left;
   }
 
-  .tablet\:text-xl {
-    font-size: 4.4rem;
-  }
-
   .tablet\:text-lg {
     font-size: 2.6rem;
+  }
+
+  .tablet\:text-xl {
+    font-size: 4.4rem;
   }
 
   .tablet\:text-sm {

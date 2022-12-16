@@ -1,4 +1,4 @@
-import HeroImage from "../../../assets/hero/myPhotoTransparent.png";
+import HeroImage from "../../../assets/hero/myPhotoTransparent.webp";
 export const HeroImg = () => {
     return (
         <div className="container mx-auto relative h-[25rem] w-[25rem]">
