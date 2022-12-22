@@ -4,10 +4,11 @@ import { GithubLanguages } from "./components/githubLanguages";
 import { ExperienceCard } from "./components/experienceCard";
 import { AboutText } from "./components/aboutText";
 import { HeroImg } from "./components/heroImg";
+import { AboutSkills } from "../skills/components/aboutSkills";
 
 export const About = (props: any) => {
     return (
-        <section className="about w-full h-auto tablet:h-screen " id="about">
+        <section className="about w-full h-auto tablet:h-screen" id="about">
             <Headings
                 h2className="headings--h2 headings__left--h2 text-lg"
                 h2="About Me"
@@ -23,6 +24,9 @@ export const About = (props: any) => {
                     <GitCommits />
                     <GithubLanguages />
                 </div>
+            </div>
+            <div className="w-full mx-auto max-w-[120rem] mt-20 tablet:mt-40">
+                <AboutSkills />
             </div>
         </section>
     );

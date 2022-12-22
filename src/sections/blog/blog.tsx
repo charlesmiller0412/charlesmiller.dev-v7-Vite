@@ -78,7 +78,7 @@ export const Blog = () => {
                             Read full article on
                             <img
                                 src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-                                className="w-[3.5rem]"
+                                className="w-[3.5rem] aspect-auto"
                                 alt="dev.to"
                             />
                         </a>
@@ -88,23 +88,12 @@ export const Blog = () => {
         );
     }
     return (
-        <section id="blog" className="blog w-full">
+        <section id="blog" className="blog w-full h-fit py-40">
             <Headings
-                h2className="headings--h2 headings__right--h2 text-lg text-end"
+                h2className="headings--h2 headings__right--h2 text-lg text-end mb-[5rem]"
                 h2="Blog"
             />
             {content}
-            {/* <a
-                href="https://charlesmiller.tech"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <Button
-                    className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center my-10 mx-auto bg-blue border-2 hover:bg-offBlack"
-                    text="View my blog & social media site"
-                    icon={faAnglesRight}
-                />
-            </a> */}
         </section>
     );
 };

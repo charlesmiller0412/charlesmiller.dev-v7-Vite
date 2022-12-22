@@ -11,7 +11,7 @@ const useNavScroll = () => {
         var skillsOffset = $("#skills").offset()!.top - 50;
         var aboutOffset = $("#about").offset()!.top - 50;
         var blogOffset = $("#blog").offset()!.top - 50;
-        var contactOffset = $("#blog").offset()!.top + 250;
+        var contactOffset = $("#contact").offset()!.top - 400;
 
         //home
         if (scroll >= 0 && scroll < projectsOffset) {

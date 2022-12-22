@@ -33,4 +33,4 @@ dist-ssr
 /public/.htaccess
 _redirects
 robots.txt
-
+/src build

@@ -8,7 +8,12 @@ export const NavLogo = (props: any) => {
     return (
         <div className={props.className}>
             <a href="/">
-                <img src={theme === "dark" ? LogoLight : LogoDark} alt="logo" />
+                <img
+                    src={theme === "dark" ? LogoLight : LogoDark}
+                    alt="logo"
+                    width="64px"
+                    height="18px"
+                />
             </a>
         </div>
     );

@@ -24,6 +24,10 @@ main {
     scroll-behavior: smooth;
 }
 
+img {
+    aspect-ratio: auto;
+}
+
 .navbar__links a:hover {
     cursor: pointer;
 }

@@ -19,24 +19,24 @@ const errorOptions = {
 
 root.render(
     <React.StrictMode>
-        <main className="flex justify-center items-center flex-col w-full h-screen">
-            <img src={Logo} className="w-3/12 desktop:w-1/12" />
+        <main className="flex justify-center items-center flex-col w-full h-screen bg-offWhite">
+            <img src={Logo} className="w-2/12 desktop:w-1/12" />
             <div className="z-10 text-center h-1/4 flex justify-center flex-col text-offBlack">
                 <h1 className="text-xl desktop:text-xxl">Page Not Found</h1>
                 <h2 className="text-sm">
                     I can't seem to reach the page you're looking for
                 </h2>
             </div>
-            <div className="absolute z-0">
+            <div className="absolute z-0 top-1/3">
                 <Lottie
                     options={errorOptions}
                     // style={{ position: "absolute", zIndex: "0" }}
                 />
             </div>
             <div className="z-10 text-center h-1/2 flex items-end text-offBlack">
-                <a href="/index.html">
+                <a href="/">
                     <Button
-                        className="btn btn__light--blue w-fit px-2 whitespace-nowrap dark:border dark:border-offWhite border border-black"
+                        className="btn btn__light--blue w-fit px-2 whitespace-nowrap  border border-black text-black"
                         text="Back to my portfolio"
                         icon={faHome}
                     />

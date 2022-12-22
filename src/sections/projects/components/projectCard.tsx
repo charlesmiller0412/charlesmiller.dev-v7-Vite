@@ -5,13 +5,13 @@ import { v4 as uuidv4 } from "uuid";
 export const ProjectCard = (props: any) => {
     return (
         <div className="card tablet:h-[26rem] tablet:w-[37rem] bg-offWhite rounded-[.4rem] flex flex-col overflow-hidden shadow-[0_4px_4px_0_rgba(0,0,0,.25)] dark:shadow-[0_4px_4px_0_rgba(255,255,255,.25)] relative">
-            <div className="card__image w-full h-5/6 relative">
+            <picture className="card__image w-full h-5/6 relative">
                 <img
                     src={props.project.imgurl}
                     alt={props.project.title}
-                    className="card__image"
+                    className="card__image aspect-auto"
                 />
-            </div>
+            </picture>
             <div className="card__links w-full flex justify-evenly self-end z-20 bg-offWhite h-[1/6]">
                 <a href={props.project.siteurl} target="__blank">
                     <Button

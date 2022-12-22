@@ -50,9 +50,6 @@ export const Skills = () => {
                     text="What’s the point of having a website if no one can find it? I use my research skills to determine the best tags and meta data to store in your files and put you at the top of the search results page."
                 />
             </div>
-            <div className="w-full mx-auto max-w-[120rem] mt-20">
-                <AboutSkills />
-            </div>
         </section>
     );
 };

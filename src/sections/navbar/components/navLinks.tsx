@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHouse,
@@ -8,7 +7,6 @@ import {
     faFileLines,
     faPen,
 } from "@fortawesome/free-solid-svg-icons";
-import $ from "jquery";
 import useNavScroll from "../../../hooks/useNavScroll";
 
 export const NavLinks = () => {

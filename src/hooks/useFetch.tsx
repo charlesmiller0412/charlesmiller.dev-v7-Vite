@@ -6,24 +6,22 @@ const useFetch = (url: string) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        setTimeout(() => {
-            fetch(url)
-                .then((res) => {
-                    if (!res.ok) {
-                        setError(true);
-                    }
-                    return res.json();
-                })
-                .then((data) => {
-                    setData(data);
-                    setLoading(false);
-                    setError(false);
-                })
-                .catch((err) => {
-                    setLoading(false);
+        fetch(url)
+            .then((res) => {
+                if (!res.ok) {
                     setError(true);
-                });
-        }, 500);
+                }
+                return res.json();
+            })
+            .then((data) => {
+                setData(data);
+                setLoading(false);
+                setError(false);
+            })
+            .catch((err) => {
+                setLoading(false);
+                setError(true);
+            });
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return { data, loading, error };

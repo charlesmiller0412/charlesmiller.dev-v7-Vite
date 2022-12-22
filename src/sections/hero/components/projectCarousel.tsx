@@ -27,12 +27,13 @@ export const ProjectCarousel = (props: any) => {
             >
                 {props.projects.map((project: any) => (
                     <SwiperSlide key={project._id} className="w-full h-full">
-                        <div className="w-full h-full relative">
+                        <picture className="w-full h-full relative">
                             <img
                                 src={project.carouselImage}
                                 alt={project.title}
+                                className="aspect-auto"
                             />
-                        </div>
+                        </picture>
                     </SwiperSlide>
                 ))}
             </Swiper>
