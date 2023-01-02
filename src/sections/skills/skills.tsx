@@ -10,7 +10,7 @@ import {
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
 import { AboutSkills } from "./components/aboutSkills";
 
-export const Skills = () => {
+const Skills = () => {
     return (
         <section className="skills" id="skills">
             <Headings
@@ -53,3 +53,5 @@ export const Skills = () => {
         </section>
     );
 };
+
+export default Skills;

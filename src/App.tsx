@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { About } from "./sections/about/about";
-import { Contact } from "./sections/contact/contact";
+import { useEffect } from "react";
+import About from "./sections/about/about";
+import Contact from "./sections/contact/contact";
 import { Hero } from "./sections/hero/hero";
 import { MobileNav } from "./sections/navbar/mobileNav/mobileNav";
 import { Navbar } from "./sections/navbar/navbar";
-import { Projects } from "./sections/projects/projects";
-import { Skills } from "./sections/skills/skills";
-import { Blog } from "./sections/blog/blog";
+import Projects from "./sections/projects/projects";
+import Skills from "./sections/skills/skills";
+import Blog from "./sections/blog/blog";
 import useThemeStore from "./appStore";
-
 import useFetch from "./hooks/useFetch";
 
 function App() {

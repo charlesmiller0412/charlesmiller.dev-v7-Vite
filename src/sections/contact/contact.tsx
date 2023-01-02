@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { Form } from "./components/form";
 
-export const Contact = () => {
+const Contact = () => {
     const form = useRef();
 
     const handleFormSubmit = (e: any) => {
@@ -81,3 +81,5 @@ export const Contact = () => {
         </section>
     );
 };
+
+export default Contact;

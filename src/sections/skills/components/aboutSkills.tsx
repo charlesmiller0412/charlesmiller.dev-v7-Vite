@@ -37,133 +37,132 @@ import StackOverflow from "../../../assets/icons/StackOverflow.webp";
 
 export const AboutSkills = () => {
     return (
-        <div className="aboutSkills grid tablet:mt-0 gap-20 desktop:gap-64 mx-auto grid-cols-1 desktop:grid-cols-2">
+        <div className="aboutSkills grid gap-20 desktop:gap-64 mx-auto grid-cols-1 desktop:grid-cols-2">
             <div>
                 <h4 className="text-center mb-5">experienced in</h4>
                 <div className="experience grid grid-rows-2 grid-flow-col w-full tablet:w-3/4 gap-5 justify-center tablet:mx-auto">
-                    {/* <div className="experience flex gap-5 flex-wrap tablet:inline-grid tablet:grid-cols-11 tablet:w-3/4 desktop:w-full tablet:gap-3"> */}
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="HTML"
                     >
                         <img src={HTMLIcon} alt="HTML" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="CSS"
                     >
                         <img src={CSSIcon} alt="CSS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="JavaScript"
                     >
                         <img src={JavascriptIcon} alt="JavaScript" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="TypeScript"
                     >
                         <img src={TypescriptIcon} alt="TypeScript" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="MongoDB"
                     >
                         <img src={MongoDB} alt="MongoDB" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="React.JS"
                     >
                         <img src={ReactIcon} alt="React.JS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Next.JS"
                     >
                         <img src={NextIcon} alt="Next.JS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Express.JS"
                     >
                         <img src={ExpressIcon} alt="Express.JS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Node.JS"
                     >
                         <img src={NodeIcon} alt="Node.JS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="jQuery"
                     >
                         <img src={jQueryIcon} alt="jQuery" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Sass"
                     >
                         <img src={Sass} alt="Sass" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Bootstrap"
                     >
                         <img src={Bootstrap} alt="Bootstrap" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="TailwindCSS"
                     >
                         <img src={TailwindIcon} alt="TailwindCSS" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Git"
                     >
                         <img src={Git} alt="Git" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="PHP"
                     >
                         <img src={PHPIcon} alt="PHP" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Python"
                     >
                         <img src={Python} alt="Python" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Java"
                     >
                         <img src={Java} alt="Java" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="JSON"
                     >
                         <img src={JSONIcon} alt="JSON" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Bash"
                     >
                         <img src={BASHIcon} alt="Bash" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Markdown"
                     >
                         <img src={Markdown} alt="Markdown" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Rest API"
                     >
                         <img src={APIIcon} alt="Rest API" />
@@ -174,92 +173,92 @@ export const AboutSkills = () => {
                 <h4 className="text-center mb-5">tools i use</h4>
                 <div className="tools grid grid-rows-2 grid-flow-col w-full tablet:w-3/4 gap-5 justify-center tablet:mx-auto">
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="VS Code"
                     >
                         <img src={VSCode} alt="Visual Studio Code" />
                     </picture>
                     <picture
-                        className="tooltip tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Node Package Manager (NPM)"
                     >
                         <img src={NPMIcon} alt="Node Package Manager (NPM)" />
                     </picture>
                     <picture
-                        className="tooltip tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Block Element Modifier"
                     >
                         <img src={BEMIcon} alt="BEM" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Github"
                     >
                         <img src={Github} alt="Github" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Wordpress"
                     >
                         <img src={Wordpress} alt="Wordpress" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Amazon Web Services"
                     >
                         <img src={AWSIcon} alt="Amazon Web Services" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Google"
                     >
                         <img src={Google} alt="Google" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Vercel"
                     >
                         <img src={Vercel} alt="Vercel" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Figma"
                     >
                         <img src={Figma} alt="Figma" />
                     </picture>
 
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Photoshop"
                     >
                         <img src={Photoshop} alt="Photoshop" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Illustrator"
                     >
                         <img src={Illustrator} alt="Illustrator" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="XD"
                     >
                         <img src={XDIcon} alt="XD" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="After Effects"
                     >
                         <img src={AfterEffects} alt="After Effects" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Premier Pro"
                     >
                         <img src={Premier} alt="Premier Pro" />
                     </picture>
                     <picture
-                        className="tooltip w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Stack Overflow &#128512.5;"
                     >
                         <img src={StackOverflow} alt="Stack Overflow" />

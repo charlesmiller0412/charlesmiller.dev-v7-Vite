@@ -7,11 +7,12 @@ export const AboutText = () => {
                     Full-Stack Web Developer
                 </span>{" "}
                 that prefers the frontend aspects of development. I also have
-                experience in UX/UI design and user research studies. My
-                long-time passion has been to create fun and attractive websites
-                using the appropriate project lifecycle and the latest
-                technologies. I use my interest for design and my knowledge of
-                code to bring the most intricate projects to life.
+                experience in UX/UI design and user research studies. Since this
+                is also my hobby, I tend to push myself to continue learning new
+                skills while expanding on the skills I already have (I even
+                enjoy reading documentation). I use my interest for design and
+                my knowledge of code to bring the most intricate projects to
+                life.
             </p>
             <p className="text-xs tablet:text-sm mt-5">
                 <span className="text-xs tablet:text-sm font-semiBold block">

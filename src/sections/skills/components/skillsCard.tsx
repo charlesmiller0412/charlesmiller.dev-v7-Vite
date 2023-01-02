@@ -11,9 +11,9 @@ export const SkillsCard = (props: any) => {
             <div className="skillCard__icon bg-lightBlue text-lg rounded-full w-[7rem] h-[7rem] absolute top-0 -translate-y-1/2 left-[3.5rem] grid place-items-center text-black">
                 <FontAwesomeIcon icon={props.icon} />
             </div>
-            <h4 className="text-sm tablet:text-md whitespace-nowrap text-black font-semiBold leading-[3.3rem]">
+            <span className="text-sm capitalize tablet:text-md whitespace-nowrap text-black font-semiBold leading-[3.3rem]">
                 {props.title}
-            </h4>
+            </span>
             <p className="text-xxs tablet:text-sm font-regular leading-md tablet:leading-lg text-offBlack">
                 {props.text}
             </p>

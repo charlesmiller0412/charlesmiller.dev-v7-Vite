@@ -2,9 +2,11 @@ export const ResumeBtn = (props: any) => {
     return (
         <button
             onClick={() => {
-                window.location.href =
+                window.open(
                     "https://charlesmiller.dev/" +
-                    import.meta.env.VITE_CURRENT_RESUME;
+                        import.meta.env.VITE_CURRENT_RESUME,
+                    "_blank"
+                );
             }}
             className={
                 props.className +

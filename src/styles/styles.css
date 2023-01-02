@@ -18,14 +18,10 @@ body .dark {
 }
 
 main {
-    font-family: poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     scroll-behavior: smooth;
-}
-
-img {
-    aspect-ratio: auto;
 }
 
 .navbar__links a:hover {

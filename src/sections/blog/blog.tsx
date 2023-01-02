@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import Loading from "../../assets/logos/loadingLogo.json";
 import Error from "../../assets/logos/errorDino.json";
 
-export const Blog = () => {
+const Blog = () => {
     const {
         loading,
         error,
@@ -59,7 +59,7 @@ export const Blog = () => {
                                 href={article.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-end gap-3 text-blue underline hover:overline"
+                                className="flex items-end gap-3 text-gray underline hover:overline"
                             >
                                 Read More...
                             </a>
@@ -73,7 +73,7 @@ export const Blog = () => {
                             href={article.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-1/2 items-end gap-3 text-blue underline hover:overline"
+                            className="flex w-1/2 items-end gap-3 text-gray underline hover:overline"
                         >
                             Read full article on
                             <img
@@ -97,3 +97,5 @@ export const Blog = () => {
         </section>
     );
 };
+
+export default Blog;

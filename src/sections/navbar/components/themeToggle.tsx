@@ -11,6 +11,7 @@ export const ThemeToggle = (props: any) => {
             onClick={() => {
                 setTheme(theme === "light" ? "dark" : "light");
             }}
+            aria-label="theme toggle"
         >
             {theme === "dark" ? (
                 <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end hover:text-blue">

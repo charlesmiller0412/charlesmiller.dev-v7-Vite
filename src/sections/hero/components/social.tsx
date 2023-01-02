@@ -13,6 +13,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="https://www.github.com/charlesmiller0412"
                 target="__blank"
+                aria-label="My GitHub Account"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
@@ -21,6 +22,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="https://www.linkedin.com/in/charlesmiller0412"
                 target="__blank"
+                aria-label="My LinkedIn Profile"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
@@ -29,6 +31,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="https://twitter.com/millersWebDev"
                 target="__blank"
+                aria-label="My Twitter Account"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
@@ -37,6 +40,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="https://pinterest.com/charlesmiller0412"
                 target="__blank"
+                aria-label="My Pinterest Account"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
@@ -45,6 +49,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="https://instagram.com/millerswebdev"
                 target="__blank"
+                aria-label="My Instagram Account"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
@@ -53,6 +58,7 @@ export const SocialLinks = (props: any) => {
             <a
                 href="mailto:charles@charlesmiller.dev"
                 target="__blank"
+                aria-label="Email me at charles@charlesmiller.dev"
                 onClick={props.onClick}
                 className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
             >
