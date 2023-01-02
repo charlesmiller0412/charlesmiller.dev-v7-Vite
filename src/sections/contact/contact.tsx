@@ -39,7 +39,7 @@ const Contact = () => {
 
     return (
         <section
-            className="contact w-full bg-offWhite dark:bg-offBlack"
+            className="contact w-full bg-white dark:bg-offBlack"
             id="contact"
         >
             <Headings
