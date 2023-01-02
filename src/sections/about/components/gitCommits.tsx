@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const GitCommits = () => {
     const [data, setData] = useState<any>([]);

@@ -1,11 +1,8 @@
-import { Button } from "../../components/button";
 import { Headings } from "../../components/headings";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 import useFetch from "../../hooks/useFetch";
-import Lottie from "react-lottie";
-import Loading from "../../assets/logos/loadingLogo.json";
-import Error from "../../assets/logos/errorDino.json";
+import Loading from "../../assets/logos/loadingLogo.webm";
+import Error from "../../assets/logos/errorDino.webm";
 
 const Blog = () => {
     const {
@@ -18,28 +15,33 @@ const Blog = () => {
 
     let content;
 
-    const logoOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: Loading,
-    };
-    const errorOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: Error,
-    };
-
     if (loading) {
         content = (
-            <div className="blog__container w-1/4 translate-x-1/4 m-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-flow-col desktop:auto-cols-auto gap-5 text-black dark:text-white">
-                <Lottie options={logoOptions} height={60} width={200} />
-            </div>
+            <video
+                autoPlay
+                loop
+                muted
+                className="blog__container w-1/4 translate-x-1/4 m-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-flow-col desktop:auto-cols-auto gap-5 text-black dark:text-white"
+            >
+                <source
+                    src={Loading}
+                    type="video/webm"
+                    height={60}
+                    width={200}
+                />
+            </video>
         );
     } else if (error) {
         content = (
-            <div className="blog__container w-1/4 translate-x-1/4 m-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-flow-col desktop:auto-cols-auto gap-5 text-black dark:text-white">
-                <Lottie options={errorOptions} />;
-            </div>
+            <video
+                autoPlay
+                loop
+                muted
+                className="blog__container w-1/4 translate-x-1/4 m-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-flow-col desktop:auto-cols-auto gap-5 text-black dark:text-white"
+            >
+                <source src={Error} type="video/webm" height={60} width={200} />
+                ;
+            </video>
         );
     } else {
         content = (

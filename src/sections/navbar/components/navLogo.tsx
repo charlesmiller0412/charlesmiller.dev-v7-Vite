@@ -1,5 +1,5 @@
 import LogoLight from "../../../assets/logos/logo.webp";
-import LogoDark from "../../../assets/logos/LogoDark.webp";
+import LogoDark from "../../../assets/logos/LogoDarkNew.webp";
 import useThemeStore from "../../../appStore";
 
 export const NavLogo = (props: any) => {

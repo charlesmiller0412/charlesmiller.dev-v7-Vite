@@ -12,21 +12,22 @@ export const ThemeToggle = (props: any) => {
                 setTheme(theme === "light" ? "dark" : "light");
             }}
             aria-label="theme toggle"
+            className={props.btnClass}
         >
             {theme === "dark" ? (
-                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end hover:text-blue">
-                    <FontAwesomeIcon icon={faSun} className={props.className} />
-                    <span className="hidden tablet:flex  text-white dark:text-offBlack text-sm tracking-[.6rem] whitespace-nowrap">
-                        Dark Mode
-                    </span>
-                </div>
-            ) : (
-                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end hover:text-blue">
+                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end text-black hover:text-blue">
                     <FontAwesomeIcon
                         icon={faMoon}
                         className={props.className}
                     />
-                    <span className="hidden tablet:flex text-white dark:text-offBlack text-sm tracking-[.6rem] whitespace-nowrap">
+                    <span className="hidden tablet:flex text-sm tracking-[.6rem] whitespace-nowrap">
+                        Dark Mode
+                    </span>
+                </div>
+            ) : (
+                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end dark:text-offWhite hover:text-blue">
+                    <FontAwesomeIcon icon={faSun} className={props.className} />
+                    <span className="hidden tablet:flex text-sm tracking-[.6rem] whitespace-nowrap">
                         Light Mode
                     </span>
                 </div>

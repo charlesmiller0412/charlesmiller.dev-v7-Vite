@@ -1,21 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/output.css";
-import Lottie from "react-lottie";
-import Error from "./assets/logos/errorDino.json";
+import Error from "./assets/logos/errorDino.webm";
 import { Button } from "./components/button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import Logo from "./assets/logos/logoName.png";
+import Logo from "./assets/logos/logoName.webp";
+
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
 );
-
-const errorOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: Error,
-};
 
 root.render(
     <React.StrictMode>
@@ -27,11 +20,10 @@ root.render(
                     I can't seem to reach the page you're looking for
                 </h2>
             </div>
-            <div className="absolute z-0 top-1/3">
-                <Lottie
-                    options={errorOptions}
-                    // style={{ position: "absolute", zIndex: "0" }}
-                />
+            <div className="absolute z-0 top-1/4">
+                <video autoPlay loop muted>
+                    <source src={Error} type="video/webm" />
+                </video>
             </div>
             <div className="z-10 text-center h-1/2 flex items-end text-offBlack">
                 <a href="/">

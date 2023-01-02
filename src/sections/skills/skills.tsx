@@ -8,7 +8,6 @@ import {
     faFolderTree,
 } from "@fortawesome/free-solid-svg-icons";
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
-import { AboutSkills } from "./components/aboutSkills";
 
 const Skills = () => {
     return (

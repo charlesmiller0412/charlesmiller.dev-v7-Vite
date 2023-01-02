@@ -2,34 +2,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { Autoplay, EffectCoverflow } from "swiper";
-import Lottie from "react-lottie";
-import Loading from "../../../assets/logos/loadingLogo.json";
-import Error from "../../../assets/logos/errorDino.json";
+import Loading from "../../../assets/logos/loadingLogo.webm";
+import Error from "../../../assets/logos/errorDino.webm";
 
 export const ProjectCarousel = (props: any) => {
-    let content;
-
-    const logoOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: Loading,
-    };
-    const errorOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: Error,
-    };
-
-    if (props.loading) {
-        content = (
-            <div className="flex w-full justify-center items-center">
-                <Lottie options={logoOptions} height={60} width={200} />
-            </div>
-        );
-    } else if (props.error) {
-        content = <Lottie options={errorOptions} />;
-    } else {
-        content = (
+    return (
+        <div className="projectCarousel w-[40rem] tablet:w-[80rem]">
             <Swiper
                 effect={"coverflow"}
                 centeredSlides={false}
@@ -51,20 +29,47 @@ export const ProjectCarousel = (props: any) => {
             >
                 {props.projects.map((project: any) => (
                     <SwiperSlide key={project._id} className="w-full h-full">
-                        <picture className="w-full h-full relative aspect-square">
-                            <img
-                                src={project.carouselImage}
-                                alt={project.title}
-                            />
-                        </picture>
+                        {props.loading ? (
+                            <video
+                                autoPlay
+                                className="flex w-full justify-center items-center"
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={Loading}
+                                    type="video/webm"
+                                    height={60}
+                                    width={200}
+                                />
+                            </video>
+                        ) : props.error ? (
+                            <video
+                                autoPlay
+                                className="flex w-full justify-center items-center"
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={Error}
+                                    type="video/webm"
+                                    height={60}
+                                    width={200}
+                                />
+                            </video>
+                        ) : (
+                            <picture className="w-full h-full relative aspect-square">
+                                <img
+                                    src={project.carouselImage}
+                                    alt={project.title}
+                                    height="50"
+                                    width="300"
+                                />
+                            </picture>
+                        )}
                     </SwiperSlide>
                 ))}
             </Swiper>
-        );
-    }
-    return (
-        <div className="projectCarousel w-[40rem] tablet:w-[80rem]">
-            {content}
         </div>
     );
 };

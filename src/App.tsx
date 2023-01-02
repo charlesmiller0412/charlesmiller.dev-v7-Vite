@@ -37,7 +37,12 @@ function App() {
                 id="main"
             >
                 <div className="hidden landscape:flex landscape:w-[7rem]">
-                    <Navbar theme={theme} setTheme={setTheme} />
+                    <Navbar
+                        theme={theme}
+                        setTheme={setTheme}
+                        error={error}
+                        loading={loading}
+                    />
                 </div>
                 <div className="w-full">
                     <MobileNav />

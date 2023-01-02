@@ -19,8 +19,8 @@ export const NavLinks = () => {
                 id="heroLink"
                 className={
                     activeLink == "heroLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon
@@ -33,8 +33,8 @@ export const NavLinks = () => {
                 href="#projects"
                 className={
                     activeLink == "projectLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon
@@ -47,8 +47,8 @@ export const NavLinks = () => {
                 href="#skills"
                 className={
                     activeLink == "skillsLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon
@@ -61,8 +61,8 @@ export const NavLinks = () => {
                 href="#about"
                 className={
                     activeLink == "aboutLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon
@@ -75,8 +75,8 @@ export const NavLinks = () => {
                 href="#blog"
                 className={
                     activeLink == "blogLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon
@@ -89,8 +89,8 @@ export const NavLinks = () => {
                 href="#contact"
                 className={
                     activeLink == "contactLink"
-                        ? "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-lightBlue dark:text-blue text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
-                        : "cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        ? "active dark:before:bg-black before:bg-offWhite cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-black dark:text-offWhite text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
+                        : "cursor-pointer w-[25rem] h-[4rem] hover:text-blue dark:hover:text-blue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
                 }
             >
                 <FontAwesomeIcon

@@ -24,6 +24,40 @@ main {
     scroll-behavior: smooth;
 }
 
+.navbar__links a {
+    position: relative;
+}
+
+.navbar__links {
+    overflow: visible;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 150%;
+    z-index: -1;
+    left: 0.5rem;
+    top: 0;
+    overflow: visible;
+    border-radius: 5rem 0 0 5rem;
+    -webkit-border-radius: 5rem 0 0 5rem;
+    -moz-border-radius: 5rem 0 0 5rem;
+    -ms-border-radius: 5rem 0 0 5rem;
+    -o-border-radius: 5rem 0 0 5rem;
+    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+    -moz-transform: translateY(-15%);
+    -ms-transform: translateY(-15%);
+    -o-transform: translateY(-15%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
 .navbar__links a:hover {
     cursor: pointer;
 }
@@ -77,26 +111,11 @@ main {
     box-shadow: 0 0 0 3px #a1dcf0 !important;
 }
 
-.shadow-right-dark {
-    text-shadow: 3px 2px 0px rgba(255, 255, 255, 0.85), 6px 3px 0px #384b52;
-}
-
-.shadow-left-dark {
-    text-shadow: -3px 2px 0px rgba(255, 255, 255, 0.85), -6px 3px 0px #384b52;
-}
-
-.shadow-right-light {
-    text-shadow: 5px 3px 0px #efefef, 8px 4px 0px rgba(255, 255, 255, 0.15);
-}
-
-.shadow-left-light {
-    text-shadow: -5px 3px 0px #efefef, -8px 4px 0px rgba(255, 255, 255, 0.15);
-}
-
 @layer components {
     section {
         @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
+
     .btn {
         @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
     }

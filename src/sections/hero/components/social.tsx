@@ -15,7 +15,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="My GitHub Account"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -24,7 +24,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="My LinkedIn Profile"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -33,7 +33,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="My Twitter Account"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -42,7 +42,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="My Pinterest Account"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faPinterest} />
             </a>
@@ -51,7 +51,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="My Instagram Account"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -60,7 +60,7 @@ export const SocialLinks = (props: any) => {
                 target="__blank"
                 aria-label="Email me at charles@charlesmiller.dev"
                 onClick={props.onClick}
-                className="text-icons dark:hover:text-lightBlue hover:text-blue transition-all landscape:text-iconLg"
+                className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faAt} />
             </a>

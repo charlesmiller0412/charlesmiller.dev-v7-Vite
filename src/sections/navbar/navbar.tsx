@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLogo } from "./components/navLogo";
 import { NavLinks } from "./components/navLinks";
 import { ThemeToggle } from "./components/themeToggle";
@@ -24,7 +23,7 @@ export const Navbar = (props: any) => {
                 <div className="navbar__bottom--theme overflow-hidden mb-5">
                     {loaded ? (
                         <ThemeToggle
-                            className="text-[2.4rem] text-offWhite dark:text-offBlack w-[7rem] hover:text-blue hover:dark:text-blue"
+                            className="text-[2.4rem] w-[7rem]"
                             theme={props.theme}
                             setTheme={props.setTheme}
                             handleTheme={props.handleTheme}

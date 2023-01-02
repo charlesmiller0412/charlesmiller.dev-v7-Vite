@@ -1,4 +1,3 @@
-import { setDefaultResultOrder } from "dns";
 import { useEffect, useState } from "react";
 const useFetch = (url: string) => {
     const [loading, setLoading] = useState(true);

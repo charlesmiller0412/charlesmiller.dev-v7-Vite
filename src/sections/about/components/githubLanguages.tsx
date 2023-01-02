@@ -4,7 +4,7 @@ export const GithubLanguages = () => {
             <img
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=charlesmiller0412&langs_count=10&layout=compact&&bg_color=f9f9f9&border_color=f9f9f9&text_color=384b52&title_color=12252b"
                 alt="GitHub Data"
-                className="w-full h-full aspect-auto"
+                className="w-4/5 m-auto h-full aspect-auto"
             />
         </picture>
     );
