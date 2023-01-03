@@ -3,6 +3,11 @@ module.exports = {
     content: ["./index.html", "./404.html", "./src/**/*.{js,ts,jsx,tsx}"],
     darkMode: "class",
     theme: {
+        fontFamily: {
+            rival: "rival-sans, sans-serif",
+            "rival-narrow": "font-family: rival-sans-narrow, sans-serif",
+            poppins: "poppins, sans-serif;",
+        },
         fontSize: {
             xxs: "1rem",
             xs: "1.2rem",

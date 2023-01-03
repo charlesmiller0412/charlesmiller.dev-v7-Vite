@@ -1101,8 +1101,8 @@ h4 {
   height: 5rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-full {
+  min-height: 100%;
 }
 
 .min-h-fit {
@@ -1139,6 +1139,10 @@ h4 {
   width: 5rem;
 }
 
+.w-\[13rem\] {
+  width: 13rem;
+}
+
 .w-\[12rem\] {
   width: 12rem;
 }
@@ -1149,10 +1153,6 @@ h4 {
 
 .w-\[25rem\] {
   width: 25rem;
-}
-
-.w-\[13rem\] {
-  width: 13rem;
 }
 
 .w-4\/5 {
@@ -1595,6 +1595,10 @@ h4 {
   text-align: end;
 }
 
+.font-rival {
+  font-family: rival-sans, sans-serif;
+}
+
 .text-xl {
   font-size: 4.4rem;
 }
@@ -1780,6 +1784,10 @@ h4 {
   font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #efefef;
 }
@@ -1789,18 +1797,21 @@ body .dark {
 }
 
 main {
-  font-family: "Poppins", sans-serif;
+  font-family: "rival-sans-narrow", sans-serif;
   font-weight: 500;
   font-style: normal;
-  scroll-behavior: smooth;
+}
+
+.navbar__links {
+  overflow: visible;
 }
 
 .navbar__links a {
   position: relative;
 }
 
-.navbar__links {
-  overflow: visible;
+.navbar__links a:hover {
+  cursor: pointer;
 }
 
 .active::before {
@@ -1829,8 +1840,25 @@ main {
   -o-transition: 1s;
 }
 
-.navbar__links a:hover {
-  cursor: pointer;
+.typingHello {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  -webkit-animation: typing 2s steps(22),
+        blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .tooltip {
@@ -2048,6 +2076,11 @@ main {
   color: rgb(239 239 239 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-lightBlue {
+  --tw-text-opacity: 1;
+  color: rgb(161 220 240 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-offBlack {
   --tw-text-opacity: 1;
   color: rgb(56 75 82 / var(--tw-text-opacity));
@@ -2099,11 +2132,6 @@ main {
 }
 
 .dark .dark\:hover\:text-blue:hover {
-  --tw-text-opacity: 1;
-  color: rgb(126 174 205 / var(--tw-text-opacity));
-}
-
-.dark .hover\:dark\:text-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(126 174 205 / var(--tw-text-opacity));
 }
@@ -2190,6 +2218,10 @@ main {
 
   .tablet\:w-1\/2 {
     width: 50%;
+  }
+
+  .tablet\:w-\[19rem\] {
+    width: 19rem;
   }
 
   .tablet\:w-\[80rem\] {
@@ -2306,6 +2338,10 @@ main {
     width: 8.333333%;
   }
 
+  .desktop\:w-\[27rem\] {
+    width: 27rem;
+  }
+
   .desktop\:auto-cols-auto {
     grid-auto-columns: auto;
   }
@@ -2345,6 +2381,10 @@ main {
 
   .desktop\:text-sm {
     font-size: 1.4rem;
+  }
+
+  .desktop\:text-xl {
+    font-size: 4.4rem;
   }
 }
 

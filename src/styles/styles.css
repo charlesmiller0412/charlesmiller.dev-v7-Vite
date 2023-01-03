@@ -9,6 +9,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #efefef;
 }
@@ -18,18 +22,21 @@ body .dark {
 }
 
 main {
-    font-family: "Poppins", sans-serif;
+    font-family: "rival-sans-narrow", sans-serif;
     font-weight: 500;
     font-style: normal;
-    scroll-behavior: smooth;
+}
+
+.navbar__links {
+    overflow: visible;
 }
 
 .navbar__links a {
     position: relative;
 }
 
-.navbar__links {
-    overflow: visible;
+.navbar__links a:hover {
+    cursor: pointer;
 }
 
 .active::before {
@@ -58,8 +65,25 @@ main {
     -o-transition: 1s;
 }
 
-.navbar__links a:hover {
-    cursor: pointer;
+.typingHello {
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    -webkit-animation: typing 2s steps(22),
+        blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .tooltip {

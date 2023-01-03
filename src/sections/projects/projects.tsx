@@ -12,7 +12,7 @@ const Projects = (props: any) => {
                     h2="Featured Projects"
                 />
             </div>
-            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 gap-5 desktop:gap-x-28 place-items-center max-w-[120rem] m-auto min-h-screen">
+            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 gap-5 desktop:gap-x-28 place-items-center max-w-[120rem] m-auto min-h-full">
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />
                 ))}
