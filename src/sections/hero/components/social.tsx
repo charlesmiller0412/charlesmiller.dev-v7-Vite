@@ -37,7 +37,7 @@ export const SocialLinks = (props: any) => {
             >
                 <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a
+            {/* <a
                 href="https://pinterest.com/charlesmiller0412"
                 target="__blank"
                 aria-label="My Pinterest Account"
@@ -45,7 +45,7 @@ export const SocialLinks = (props: any) => {
                 className="text-icons dark:hover:text-blue hover:text-blue transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faPinterest} />
-            </a>
+            </a> */}
             <a
                 href="https://instagram.com/millerswebdev"
                 target="__blank"

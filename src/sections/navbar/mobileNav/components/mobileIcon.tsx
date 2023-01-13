@@ -8,10 +8,10 @@ export const MobileIcon = (props: any) => {
 
     return (
         <div className="mobileIcon fixed top-0 left-0 w-full flex justify-between z-50 bg-none h-[5rem] items-center select-none">
-            <div className="mobileIcon__theme px-[5vw] h-full flex">
+            <div className="mobileIcon__theme pl-[5vw] h-full flex w-[10rem]">
                 {loaded ? <ThemeToggle className="text-lg text-blue" /> : ""}
             </div>
-            <div className="mobileIcon__hamburger text-blue text-xl px-[5vw] z-40">
+            <div className="mobileIcon__hamburger text-blue text-xl pr-[5vw] z-40">
                 {props.showMenu === false ? (
                     <FontAwesomeIcon
                         icon={faBars}

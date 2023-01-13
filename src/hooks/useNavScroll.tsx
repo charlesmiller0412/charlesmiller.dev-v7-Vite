@@ -10,7 +10,7 @@ const useNavScroll = () => {
         var projectsOffset = $("#projects").offset()!.top - 50;
         var skillsOffset = $("#skills").offset()!.top - 50;
         var aboutOffset = $("#about").offset()!.top - 50;
-        var blogOffset = $("#blog").offset()!.top - 50;
+        // var blogOffset = $("#blog").offset()!.top - 50;
         var contactOffset = $("#contact").offset()!.top - 400;
 
         //home
@@ -26,25 +26,18 @@ const useNavScroll = () => {
             setActiveLink("skillsLink");
         }
         //about
-        if (scroll >= aboutOffset && scroll < blogOffset) {
+        if (scroll >= aboutOffset && scroll < contactOffset) {
             setActiveLink("aboutLink");
         }
-        // blog
-        if (scroll >= blogOffset && scroll < contactOffset) {
-            setActiveLink("blogLink");
-        }
+        // // blog
+        // if (scroll >= blogOffset && scroll < contactOffset) {
+        //     setActiveLink("blogLink");
+        // }
         //contact
         if (scroll >= contactOffset) {
             setActiveLink("contactLink");
         }
         return activeLink;
-
-        // // show mobileNav after scroll
-        // if (scroll >= 50) {
-        //     $("#mobileNav").css({ opacity: "1", transition: "all .3s" });
-        // } else {
-        //     $("#mobileNav").css({ opacity: "0", transition: "all .3s" });
-        // }
     }
 
     useEffect(() => {

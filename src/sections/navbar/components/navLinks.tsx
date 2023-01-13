@@ -71,7 +71,7 @@ export const NavLinks = () => {
                 />
                 About Me
             </a>
-            <a
+            {/* <a
                 href="#blog"
                 className={
                     activeLink == "blogLink"
@@ -84,7 +84,7 @@ export const NavLinks = () => {
                     className="text-[2rem] w-[7rem]"
                 />
                 Latest Blogs
-            </a>
+            </a> */}
             <a
                 href="#contact"
                 className={

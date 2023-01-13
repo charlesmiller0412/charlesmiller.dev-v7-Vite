@@ -6,8 +6,11 @@ import { SocialLinks } from "../hero/components/social";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { Form } from "./components/form";
+import useThemeStore from "../../appStore";
 
 const Contact = () => {
+    const theme = useThemeStore((state: any) => state.theme);
+
     const form = useRef();
 
     const handleFormSubmit = (e: any) => {
@@ -39,14 +42,29 @@ const Contact = () => {
 
     return (
         <section
-            className="contact w-full bg-white dark:bg-offBlack"
+            className="contact w-full bg-white dark:bg-offBlack relative"
             id="contact"
         >
+            <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-0">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M1200 0L0 0 892.25 114.72 1200 0z"
+                        className={
+                            theme == "dark" ? "fill-black" : "fill-offWhite"
+                        }
+                    ></path>
+                </svg>
+            </div>
             <Headings
                 h2className="headings--h2 headings__left--h2 text-lg text-start"
                 h2="Contact"
             />
-            <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white">
+            <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white z-10">
                 <div className="contact__container--left w-full tablet:w-1/3 justify-evenly h-fit grid grid-cols-2 tablet:gap-x-32">
                     <div className="contact__container--left-location items-start hidden tablet:flex w-full tablet:items-center tablet:w-full flex-col tablet:flex-row h-fit">
                         <FontAwesomeIcon
@@ -74,7 +92,7 @@ const Contact = () => {
                     </div>
                     <SocialLinks className="socialLinks text-icons w-full m-auto col-span-2 flex justify-between mb-8 tablet:my-12 max-w-[25rem]" />
                 </div>
-                <div className="contact__container--right w-full tablet:w-1/2 items-end">
+                <div className="contact__container--right w-full tablet:w-1/2 items-end z-10">
                     <Form handleFormSubmit={handleFormSubmit} form={form} />
                 </div>
             </div>

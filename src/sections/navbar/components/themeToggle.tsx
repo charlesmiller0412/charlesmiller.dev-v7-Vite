@@ -15,7 +15,7 @@ export const ThemeToggle = (props: any) => {
             className={props.btnClass}
         >
             {theme === "dark" ? (
-                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end text-black hover:text-blue">
+                <div className="sun cursor-pointer w-[3rem] tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end text-black hover:text-blue">
                     <FontAwesomeIcon
                         icon={faMoon}
                         className={props.className}
@@ -25,7 +25,7 @@ export const ThemeToggle = (props: any) => {
                     </span>
                 </div>
             ) : (
-                <div className="sun cursor-pointer w-fit tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end dark:text-offWhite hover:text-blue">
+                <div className="sun cursor-pointer w-[3rem] tablet:w-[25rem] grid grid-cols-1 tablet:grid-cols-3 items-end dark:text-offWhite hover:text-blue">
                     <FontAwesomeIcon icon={faSun} className={props.className} />
                     <span className="hidden tablet:flex text-sm tracking-[.6rem] whitespace-nowrap">
                         Light Mode

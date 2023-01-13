@@ -54,7 +54,7 @@ function App() {
                     />
                     <Skills />
                     <About />
-                    <Blog />
+                    {/* <Blog /> */}
                     <Contact />
                 </div>
             </main>

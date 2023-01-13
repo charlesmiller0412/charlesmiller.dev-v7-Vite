@@ -46,6 +46,9 @@ module.exports = {
             bold: 700,
         },
         extend: {
+            height: {
+                iOS: "100dvh",
+            },
             screens: {
                 tablet: "57.6rem",
                 desktop: "87.5rem",
@@ -54,7 +57,7 @@ module.exports = {
                 "hero-image-dark":
                     "linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('./src/assets/hero/heroBg.webp')",
                 "hero-image-light":
-                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(239, 239, 239) 99%), url('./src/assets/hero/heroBg.webp')",
+                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(56, 75, 82) 99%), url('./src/assets/hero/heroBg.webp')",
             },
         },
     },

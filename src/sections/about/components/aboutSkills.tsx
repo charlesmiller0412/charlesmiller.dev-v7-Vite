@@ -14,7 +14,6 @@ import TailwindIcon from "../../../assets/icons/TailwindCSS.webp";
 import Git from "../../../assets/icons/Git.webp";
 import PHPIcon from "../../../assets/icons/HTML.webp";
 import Python from "../../../assets/icons/Python.webp";
-import Java from "../../../assets/icons/Java.webp";
 import JSONIcon from "../../../assets/icons/json.webp";
 import BASHIcon from "../../../assets/icons/Bash.webp";
 import Markdown from "../../../assets/icons/Markdown.webp";
@@ -24,7 +23,6 @@ import NPMIcon from "../../../assets/icons/NPMIcon.webp";
 import BEMIcon from "../../../assets/icons/BEM.webp";
 import Github from "../../../assets/icons/Github.webp";
 import Wordpress from "../../../assets/icons/Wordpress.webp";
-import AWSIcon from "../../../assets/icons/AWS.webp";
 import Google from "../../../assets/icons/google.webp";
 import Vercel from "../../../assets/icons/Vercel.webp";
 import Figma from "../../../assets/icons/Figma.webp";
@@ -33,14 +31,13 @@ import XDIcon from "../../../assets/icons/xd.webp";
 import Illustrator from "../../../assets/icons/Illustrator.webp";
 import AfterEffects from "../../../assets/icons/AfterEffects.webp";
 import Premier from "../../../assets/icons/Premier.webp";
-import StackOverflow from "../../../assets/icons/StackOverflow.webp";
 
 export const AboutSkills = () => {
     return (
-        <div className="aboutSkills grid gap-20 desktop:gap-64 mx-auto grid-cols-1 desktop:grid-cols-2">
+        <div className="aboutSkills grid gap-12 mx-auto grid-cols-1">
             <div>
                 <h4 className="text-center mb-5">experienced in</h4>
-                <div className="experience grid grid-rows-2 grid-flow-col w-full tablet:w-3/4 gap-5 justify-center tablet:mx-auto">
+                <div className="experience grid grid-rows-2 grid-flow-col w-3/4 tablet:w-3/4 gap-3 justify-center mx-auto">
                     <picture
                         className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="HTML"
@@ -139,12 +136,6 @@ export const AboutSkills = () => {
                     </picture>
                     <picture
                         className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
-                        data-tooltip="Java"
-                    >
-                        <img src={Java} alt="Java" />
-                    </picture>
-                    <picture
-                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="JSON"
                     >
                         <img src={JSONIcon} alt="JSON" />
@@ -204,12 +195,6 @@ export const AboutSkills = () => {
                     </picture>
                     <picture
                         className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
-                        data-tooltip="Amazon Web Services"
-                    >
-                        <img src={AWSIcon} alt="Amazon Web Services" />
-                    </picture>
-                    <picture
-                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Google"
                     >
                         <img src={Google} alt="Google" />
@@ -256,12 +241,6 @@ export const AboutSkills = () => {
                         data-tooltip="Premier Pro"
                     >
                         <img src={Premier} alt="Premier Pro" />
-                    </picture>
-                    <picture
-                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
-                        data-tooltip="Stack Overflow &#128512.5;"
-                    >
-                        <img src={StackOverflow} alt="Stack Overflow" />
                     </picture>
                 </div>
             </div>

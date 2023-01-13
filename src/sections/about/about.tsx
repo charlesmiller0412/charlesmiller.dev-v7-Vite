@@ -1,14 +1,12 @@
 import { Headings } from "../../components/headings";
 import { GitCommits } from "./components/gitCommits";
-import { GithubLanguages } from "./components/githubLanguages";
-import { ExperienceCard } from "./components/experienceCard";
 import { AboutText } from "./components/aboutText";
 import { HeroImg } from "./components/heroImg";
-import { AboutSkills } from "../skills/components/aboutSkills";
+import { AboutSkills } from "./components/aboutSkills";
 
 const About = () => {
     return (
-        <section className="about w-full h-auto tablet:h-fit" id="about">
+        <section className="about w-full h-auto tablet:h-screen" id="about">
             <Headings
                 h2className="headings--h2 headings__left--h2 text-lg"
                 h2="About Me"
@@ -19,14 +17,10 @@ const About = () => {
                     <AboutText />
                 </div>
 
-                <div className="w-full m-auto ">
-                    <ExperienceCard />
+                <div className="w-full m-auto gap-12 grid">
+                    <AboutSkills />
                     <GitCommits />
-                    <GithubLanguages />
                 </div>
-            </div>
-            <div className="w-full mx-auto max-w-[120rem] mt-20">
-                <AboutSkills />
             </div>
         </section>
     );

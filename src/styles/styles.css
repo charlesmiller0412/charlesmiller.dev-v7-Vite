@@ -135,6 +135,10 @@ main {
     box-shadow: 0 0 0 3px #a1dcf0 !important;
 }
 
+.iOSscreen {
+    height: 100dvh;
+}
+
 @layer components {
     section {
         @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];

@@ -72,19 +72,6 @@ export const MobileMenu = (props: any) => {
                 </li>
                 <li className="py-[1.5vh]">
                     <a
-                        href="#blog"
-                        className={
-                            activeLink == "blogLink"
-                                ? "text-md font-bold hover:text-blue text-blue"
-                                : "text-md font-bold hover:text-blue"
-                        }
-                        onClick={props.handleClick}
-                    >
-                        Latest Blogs
-                    </a>
-                </li>
-                <li className="py-[1.5vh]">
-                    <a
                         href="#contact"
                         className={
                             activeLink == "contactLink"
