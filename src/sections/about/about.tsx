@@ -6,7 +6,7 @@ import { AboutSkills } from "./components/aboutSkills";
 
 const About = () => {
     return (
-        <section className="about w-full h-auto tablet:h-screen" id="about">
+        <section className="about w-full h-auto" id="about">
             <Headings
                 h2className="headings--h2 headings__left--h2 text-lg"
                 h2="About Me"

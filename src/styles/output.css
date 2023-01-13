@@ -617,20 +617,6 @@ section {
   }
 }
 
-@media (min-width: 57.6rem) {
-  .btn {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-  }
-}
-
-@media (orientation: landscape) {
-  .btn {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-}
-
 .btn__primary {
   --tw-bg-opacity: 1;
   background-color: rgb(126 174 205 / var(--tw-bg-opacity));
@@ -1061,8 +1047,8 @@ h4 {
   height: fit-content;
 }
 
-.h-\[calc\(100vh-5rem\)\] {
-  height: calc(100vh - 5rem);
+.h-iOS {
+  height: 100dvh;
 }
 
 .h-\[7rem\] {
@@ -1095,10 +1081,6 @@ h4 {
 
 .h-\[5rem\] {
   height: 5rem;
-}
-
-.h-iOS {
-  height: 100dvh;
 }
 
 .min-h-full {
@@ -1969,11 +1951,6 @@ main {
   z-index: -10;
 }
 
-.before\:h-screen::before {
-  content: var(--tw-content);
-  height: 100vh;
-}
-
 .before\:h-iOS::before {
   content: var(--tw-content);
   height: 100dvh;
@@ -2428,16 +2405,8 @@ main {
     margin-bottom: 3rem;
   }
 
-  .portrait\:h-full {
-    height: 100%;
-  }
-
-  .portrait\:h-iOS {
-    height: 100dvh;
-  }
-
-  .portrait\:h-screen {
-    height: 100vh;
+  .portrait\:self-center {
+    align-self: center;
   }
 }
 

@@ -72,7 +72,7 @@ export const Hero = (props: any) => {
                     </a>
                 </div>
             </div>
-            <div className="hero__bottom self-center row-span-2 tablet:self-end landscape:self-center justify-self-center">
+            <div className="hero__bottom self-center row-span-2 portrait:self-center tablet:self-end landscape:self-center justify-self-center">
                 <ProjectCarousel projects={props.projects} />
             </div>
         </section>

@@ -145,7 +145,7 @@ main {
     }
 
     .btn {
-        @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
+        @apply py-[1rem] rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
     }
 
     .btn__primary {
