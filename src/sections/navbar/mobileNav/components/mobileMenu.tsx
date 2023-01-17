@@ -6,6 +6,34 @@ import useNavScroll from "../../../../hooks/useNavScroll";
 export const MobileMenu = (props: any) => {
     const activeLink = useNavScroll();
 
+    const mobileNavLinks = [
+        {
+            name: "home",
+            link: "#",
+            id: "heroLink",
+        },
+        {
+            name: "my work",
+            link: "#projects",
+            id: "projectLink",
+        },
+        {
+            name: "my specialties",
+            link: "#skills",
+            id: "skillsLink",
+        },
+        {
+            name: "about me",
+            link: "#about",
+            id: "aboutLink",
+        },
+        {
+            name: "contact me",
+            link: "#contact",
+            id: "contactLink",
+        },
+    ];
+
     return (
         <div
             className={
@@ -14,75 +42,24 @@ export const MobileMenu = (props: any) => {
                     : "mobileMenu fixed top-0 left-[200%] w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center duration-1000 text-black dark:text-white pt-[7vh] landscape:flex-row landscape:text-left landscape:-top-[200%] landscape:left-0"
             }
         >
-            <ul className="">
-                <li className="py-[1.5vh]">
-                    {
-                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                        <a
-                            href="#"
-                            className={
-                                activeLink == "heroLink"
-                                    ? "text-md font-bold hover:text-blue text-blue"
-                                    : "text-md font-bold hover:text-blue"
-                            }
-                            onClick={props.handleClick}
-                        >
-                            Home
-                        </a>
-                    }
-                </li>
-                <li className="py-[1.5vh]">
-                    <a
-                        href="#projects"
-                        className={
-                            activeLink == "projectLink"
-                                ? "text-md font-bold hover:text-blue text-blue"
-                                : "text-md font-bold hover:text-blue"
+            <ul>
+                {mobileNavLinks.map((link: any) => (
+                    <li className="py-[1.5vh]" key={link.name}>
+                        {
+                            <a
+                                href={link.link}
+                                className={
+                                    activeLink == link.id
+                                        ? "text-md font-bold hover:text-blue text-blue capitalize"
+                                        : "text-md font-bold hover:text-blue capitalize"
+                                }
+                                onClick={props.handleClick}
+                            >
+                                {link.name}
+                            </a>
                         }
-                        onClick={props.handleClick}
-                    >
-                        My Work
-                    </a>
-                </li>
-                <li className="py-[1.5vh]">
-                    <a
-                        href="#skills"
-                        className={
-                            activeLink == "skillsLink"
-                                ? "text-md font-bold hover:text-blue text-blue"
-                                : "text-md font-bold hover:text-blue"
-                        }
-                        onClick={props.handleClick}
-                    >
-                        My Specialties
-                    </a>
-                </li>
-                <li className="py-[1.5vh]">
-                    <a
-                        href="#about"
-                        className={
-                            activeLink == "aboutLink"
-                                ? "text-md font-bold hover:text-blue text-blue"
-                                : "text-md font-bold hover:text-blue"
-                        }
-                        onClick={props.handleClick}
-                    >
-                        About Me
-                    </a>
-                </li>
-                <li className="py-[1.5vh]">
-                    <a
-                        href="#contact"
-                        className={
-                            activeLink == "contactLink"
-                                ? "text-md font-bold hover:text-blue text-blue"
-                                : "text-md font-bold hover:text-blue"
-                        }
-                        onClick={props.handleClick}
-                    >
-                        Contact Me
-                    </a>
-                </li>
+                    </li>
+                ))}
             </ul>
             <div className="mobileMenu__social w-3/4 landscape:w-1/2 landscape:flex landscape:flex-col landscape:items-center landscape:justify-between landscape:h-1/2">
                 <MobileLogo className="navbar__logo w-[8.7rem] h-[2.5rem] relative m-auto portrait:mb-12" />

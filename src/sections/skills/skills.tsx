@@ -10,7 +10,6 @@ import {
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
-    let key = 0;
     const skills = [
         {
             icon: faPen,
@@ -56,7 +55,7 @@ const Skills = () => {
                         icon={skill.icon}
                         title={skill.title}
                         text={skill.text}
-                        key={key++}
+                        key={skill.title}
                     />
                 ))}
             </div>
