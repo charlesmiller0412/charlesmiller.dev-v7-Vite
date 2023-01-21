@@ -12,7 +12,7 @@ import Sass from "../../../assets/icons/Sass.webp";
 import Bootstrap from "../../../assets/icons/Bootstrap.webp";
 import TailwindIcon from "../../../assets/icons/TailwindCSS.webp";
 import Git from "../../../assets/icons/Git.webp";
-import PHPIcon from "../../../assets/icons/HTML.webp";
+import PostgresIcon from "../../../assets/icons/postgres.webp";
 import Python from "../../../assets/icons/Python.webp";
 import JSONIcon from "../../../assets/icons/json.webp";
 import BASHIcon from "../../../assets/icons/Bash.webp";
@@ -124,9 +124,9 @@ export const AboutSkills = () => {
                     </picture>
                     <picture
                         className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
-                        data-tooltip="PHP"
+                        data-tooltip="PostgreSQL"
                     >
-                        <img src={PHPIcon} alt="PHP" />
+                        <img src={PostgresIcon} alt="PostgreSQL" />
                     </picture>
                     <picture
                         className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
@@ -170,13 +170,13 @@ export const AboutSkills = () => {
                         <img src={VSCode} alt="Visual Studio Code" />
                     </picture>
                     <picture
-                        className="tooltip aspect-square tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Node Package Manager (NPM)"
                     >
                         <img src={NPMIcon} alt="Node Package Manager (NPM)" />
                     </picture>
                     <picture
-                        className="tooltip aspect-square tooltip__tall w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
+                        className="tooltip aspect-square w-[2.5rem] h-[2.5rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"
                         data-tooltip="Block Element Modifier"
                     >
                         <img src={BEMIcon} alt="BEM" />

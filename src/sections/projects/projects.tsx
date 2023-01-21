@@ -21,7 +21,7 @@ const Projects = (props: any) => {
                     target="__blank"
                 >
                     <Button
-                        className="flex btn btn__light--blue bg-blue dark:border-offWhite hover:bg-offWhite border-offBlack border-2 dark:hover:bg-offBlack tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
+                        className="flex btn btn__light--blue bg-blue dark:border-offWhite hover:bg-offWhite border-offBlack border-2 dark:hover:bg-offBlack dark:hover:text-offWhite tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
                         text="View all projects in my database"
                         icon={faAnglesRight}
                     />

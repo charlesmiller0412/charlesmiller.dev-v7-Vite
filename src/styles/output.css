@@ -1903,9 +1903,9 @@ main {
   transition: all ease 0.3s;
   content: attr(data-tooltip);
   background: rgba(0, 0, 0, 1);
-  bottom: -1.3rem;
-  min-width: 4rem;
-  margin-left: -2.5rem;
+  bottom: -50%;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 0.4rem;
   padding: 0.25rem 0.5rem;
   z-index: 1;
@@ -1913,16 +1913,16 @@ main {
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
   -o-border-radius: 0.4rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .tooltip:hover::after {
   opacity: 1;
-}
-
-.tooltip__tall:hover::after {
-  margin-left: -4rem;
-  bottom: -2.25rem;
-  width: 8rem;
 }
 
 .swal2-popup button {
@@ -2154,6 +2154,11 @@ main {
 .dark .hover\:dark\:text-offBlack:hover {
   --tw-text-opacity: 1;
   color: rgb(56 75 82 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-offWhite:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 239 239 / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-blue:hover {
