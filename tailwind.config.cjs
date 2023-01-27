@@ -55,9 +55,9 @@ module.exports = {
             },
             backgroundImage: {
                 "hero-image-dark":
-                    "linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 90%), url('./src/assets/hero/heroBg.webp')",
+                    "linear-gradient(to bottom, rgba(56, 75, 82, .7), rgb(18, 37, 43) 99%), url('./src/assets/hero/planetBG.webp')",
                 "hero-image-light":
-                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(56, 75, 82) 99%), url('./src/assets/hero/heroBg.webp')",
+                    "linear-gradient(to bottom, rgba(56, 75, 82, .5), rgb(56, 75, 82) 99%), url('./src/assets/hero/planetBG.webp')",
             },
         },
     },

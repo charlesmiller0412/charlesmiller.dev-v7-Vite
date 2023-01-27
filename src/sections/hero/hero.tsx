@@ -11,7 +11,7 @@ export const Hero = (props: any) => {
 
     return (
         <section
-            className="hero w-full m-auto h-iOS tablet:h-screen landscape:h-screen grid place-items-center before:bg-hero-image-light before:bg-no-repeat before:bg-cover before:w-full before:overflow-hidden before:h-iOS before:absolute before:-z-10 relative z-10 grid-rows-3 gap-20 grid-cols-1 py-0 tablet:py-10 landscape:py-10"
+            className="hero w-full m-auto h-iOS tablet:h-screen landscape:h-screen grid place-items-center before:bg-hero-image-light before:bg-center before:bg-no-repeat before:bg-cover before:w-full before:overflow-hidden before:h-iOS before:absolute before:-z-10 relative z-10 grid-rows-3 gap-20 grid-cols-1 py-0 tablet:py-10 landscape:py-10"
             id="hero"
         >
             <div className="absolute bottom-0 left-0 overflow-hidden w-full leading-[0] rotate-180">
