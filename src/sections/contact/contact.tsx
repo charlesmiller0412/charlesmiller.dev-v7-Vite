@@ -61,7 +61,7 @@ const Contact = () => {
                 </svg>
             </div>
             <Headings
-                h2className="headings--h2 headings__left--h2 text-lg text-start"
+                h2className="headings--h2 headings__left--h2 text-start"
                 h2="Contact"
             />
             <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white z-10">

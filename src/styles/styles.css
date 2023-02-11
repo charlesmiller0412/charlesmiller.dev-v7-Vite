@@ -140,7 +140,7 @@ main {
 
 @layer components {
     section {
-        @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+        @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-0 tablet:py-[5vh] landscape:tablet:pb-[10vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
 
     .btn {
@@ -167,15 +167,11 @@ main {
     }
 
     .headings--h2 {
-        @apply text-black mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem];
+        @apply text-black text-md tablet:text-lg dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem];
     }
 
     .headings__left--h2 {
-        @apply text-offBlack mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem] relative uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue before:absolute before:bottom-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem];
-    }
-
-    .headings__right--h2 {
-        @apply relative text-offBlack mb-8 tablet:mb-0 font-bold leading-[4rem] landscape:leading-[6.6rem] uppercase tracking-[.75rem] after:content-[''] after:w-[1.6rem] after:h-[.2rem] after:bg-blue after:absolute after:bottom-1/2 after:right-0 after:-translate-y-1/2 pr-[2.6rem] dark:text-white;
+        @apply text-offBlack mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem] relative uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem];
     }
 
     .sun {

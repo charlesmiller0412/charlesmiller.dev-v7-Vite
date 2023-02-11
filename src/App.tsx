@@ -58,9 +58,16 @@ function App() {
                     <Contact />
                 </div>
             </main>
-            <footer className="bg-offWhite dark:bg-black h-[2rem] text-black dark:text-white text-xs flex justify-center items-center">
+            <footer className="bg-offWhite dark:bg-black h-[2rem] text-black dark:text-white text-xxs tablet:text-xs flex items-center justify-center font-rival">
                 {new Date().getFullYear()} Copyright &copy; Charles Miller. All
                 rights reserved.
+                <a
+                    href="https://www.freepik.com/free-vector/earth-with-blue-light_2179489.htm#query=blue%20planet%20background&position=0&from_view=search&track=ais"
+                    className="text-xxs tablet:text-xs font-rival mx-1"
+                >
+                    Background by brgfx
+                </a>
+                on Freepik
             </footer>
         </>
     );

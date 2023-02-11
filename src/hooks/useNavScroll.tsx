@@ -7,11 +7,11 @@ const useNavScroll = () => {
 
     function handleScroll(activeLink: any) {
         var scroll: any = $(window).scrollTop();
-        var projectsOffset = $("#projects").offset()!.top - 50;
-        var skillsOffset = $("#skills").offset()!.top - 50;
-        var aboutOffset = $("#about").offset()!.top - 50;
+        var projectsOffset = $("#projects").offset()!.top - 100;
+        var skillsOffset = $("#skills").offset()!.top - 100;
+        var aboutOffset = $("#about").offset()!.top - 350;
         // var blogOffset = $("#blog").offset()!.top - 50;
-        var contactOffset = $("#contact").offset()!.top - 400;
+        var contactOffset = $("#contact").offset()!.top - 500;
 
         //home
         if (scroll >= 0 && scroll < projectsOffset) {

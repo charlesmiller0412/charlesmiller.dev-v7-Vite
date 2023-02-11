@@ -43,11 +43,11 @@ const Skills = () => {
         },
     ];
     return (
-        <section className="skills" id="skills">
+        <section className="skills min-h-screen grid items-center" id="skills">
             <Headings
                 className="w-full flex flex-col items-start mb-5 tablet:mb-[5rem]"
                 h2="My Skills"
-                h2className="headings--h2 headings__left--h2 text-lg"
+                h2className="headings--h2 headings__left--h2"
             />
             <div className="skills__container grid grid-cols-1 landscape:grid-cols-2 landscape:desktop:grid-cols-3 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-20 gap-5 place-items-center max-w-[120rem] m-auto">
                 {skills.map((skill: any) => (
