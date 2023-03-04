@@ -20,9 +20,13 @@ function App() {
     } = useFetch("https://dbserver.onrender.com/api/projects/favorites");
 
     function handleTheme() {
-        theme === "dark"
-            ? document.getElementById("main")?.classList.add("dark")
-            : document.getElementById("main")?.classList.remove("dark");
+        if (theme === "dark") {
+            document.getElementById("main")?.classList.add("dark");
+            document.getElementById("header")?.classList.add("dark");
+        } else {
+            document.getElementById("main")?.classList.remove("dark");
+            document.getElementById("header")?.classList.remove("dark");
+        }
     }
 
     useEffect(() => {
@@ -32,18 +36,19 @@ function App() {
 
     return (
         <>
+            <header className="bg-offWhite dark:bg-black dark" id="header">
+                <Navbar
+                    theme={theme}
+                    setTheme={setTheme}
+                    error={error}
+                    loading={loading}
+                />
+            </header>
             <main
                 className="overflow-x-hidden dark bg-offWhite dark:bg-black flex"
                 id="main"
             >
-                <div className="hidden landscape:flex landscape:w-[7rem]">
-                    <Navbar
-                        theme={theme}
-                        setTheme={setTheme}
-                        error={error}
-                        loading={loading}
-                    />
-                </div>
+                <div className="hidden landscape:flex landscape:w-[7rem]"></div>
                 <div className="w-full">
                     <MobileNav />
                     <Hero theme={theme} projects={projects} />

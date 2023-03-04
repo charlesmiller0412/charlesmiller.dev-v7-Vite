@@ -959,10 +959,6 @@ h4 {
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -1052,12 +1048,8 @@ h4 {
   height: 5rem;
 }
 
-.h-\[200\%\] {
-  height: 200%;
-}
-
-.h-\[100\%\] {
-  height: 100%;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .min-h-full {
@@ -1067,10 +1059,6 @@ h4 {
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-full {
@@ -1152,10 +1140,6 @@ h4 {
 
 .w-\[8\.7rem\] {
   width: 8.7rem;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .max-w-\[120rem\] {
@@ -1622,12 +1606,12 @@ h4 {
   font-size: 1.4rem;
 }
 
-.text-xs {
-  font-size: 1.2rem;
-}
-
 .text-xxs {
   font-size: 1rem;
+}
+
+.text-xs {
+  font-size: 1.2rem;
 }
 
 .text-lg {
@@ -1652,18 +1636,6 @@ h4 {
 
 .text-\[2rem\] {
   font-size: 2rem;
-}
-
-.text-\[\.5rem\] {
-  font-size: .5rem;
-}
-
-.text-\[\.10rem\] {
-  font-size: .10rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
 }
 
 .font-bold {
@@ -1817,6 +1789,11 @@ body {
 
 body .dark {
   background-color: #12252b;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 main {
@@ -2343,6 +2320,10 @@ main {
     text-align: left;
   }
 
+  .tablet\:text-xs {
+    font-size: 1.2rem;
+  }
+
   .tablet\:text-lg {
     font-size: 2.6rem;
   }
@@ -2357,10 +2338,6 @@ main {
 
   .tablet\:text-md {
     font-size: 2.2rem;
-  }
-
-  .tablet\:text-xs {
-    font-size: 1.2rem;
   }
 
   .tablet\:leading-lg {

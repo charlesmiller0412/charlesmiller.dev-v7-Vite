@@ -9,12 +9,11 @@ const Projects = (props: any) => {
             className="projects min-h-screen grid items-center"
             id="projects"
         >
-            <div className="projects__heading headings__left--h2 flex justify-between items-center tablet:mb-[5rem]">
-                <Headings
-                    h2className="headings--h2 text-black dark:text-white"
-                    h2="Featured Projects"
-                />
-            </div>
+            <Headings
+                className="w-full flex flex-col items-start mb-5 tablet:mb-[5rem]"
+                h2className="headings--h2 headings__left--h2"
+                h2="Featured Projects"
+            />
             <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 gap-5 desktop:gap-x-28 place-items-center max-w-[120rem] m-auto min-h-full">
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />

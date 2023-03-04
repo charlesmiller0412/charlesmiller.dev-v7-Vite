@@ -21,6 +21,11 @@ body .dark {
     background-color: #12252b;
 }
 
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 main {
     font-family: "rival-sans-narrow", sans-serif;
     font-weight: 500;

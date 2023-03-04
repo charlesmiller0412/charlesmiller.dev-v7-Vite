@@ -42,7 +42,7 @@ const Contact = () => {
 
     return (
         <section
-            className="contact w-full bg-white dark:bg-offBlack relative"
+            className="contact w-full bg-white dark:bg-offBlack relative py-40"
             id="contact"
         >
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-0">
