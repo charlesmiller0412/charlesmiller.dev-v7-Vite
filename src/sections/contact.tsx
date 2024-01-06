@@ -1,12 +1,13 @@
 import { useRef } from "react";
-import { Headings } from "../../components/headings";
+import { Headings } from "../components/headings";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { SocialLinks } from "../hero/components/social";
+import { SocialLinks } from "./hero/components/social";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import { Form } from "./components/form";
-import useThemeStore from "../../appStore";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "../components/button";
+import useThemeStore from "../appStore";
 
 const Contact = () => {
     const theme = useThemeStore((state: any) => state.theme);
@@ -40,7 +41,56 @@ const Contact = () => {
         e.target.reset();
     };
 
-    return (
+    const Form = (props: any) => (
+        <form
+            ref={props.form}
+            onSubmit={props.handleFormSubmit}
+            className="grid grid-cols-2 gap-4 tablet:gap-[2rem] text-xs font-regular placeholder:font-light"
+        >
+            <input
+                type="text"
+                name="from_name"
+                placeholder="Name"
+                required
+                className="col-span-1 pl-[2rem] py-[1.5rem] border border-[#384b52a2] dark:border-[#a1dcf0a2] bg-offWhite dark:bg-offBlack focus:outline-offBlack dark:focus:outline-lightBlue"
+            />
+            <input
+                type="tel"
+                name="from_phone"
+                placeholder="Phone number (Optional)"
+                className="col-span-1 pl-[2rem] py-[1.5rem] border border-[#384b52a2] dark:border-[#a1dcf0a2] bg-offWhite dark:bg-offBlack focus:outline-offBlack dark:focus:outline-lightBlue"
+            />
+            <input
+                type="email"
+                name="from_email"
+                placeholder="E-Mail address"
+                required
+                className="col-span-2 pl-[2rem] py-[1.5rem] border border-[#384b52a2] dark:border-[#a1dcf0a2] bg-offWhite dark:bg-offBlack focus:outline-offBlack dark:focus:outline-lightBlue"
+            />
+            <textarea
+                name="message"
+                placeholder="What's your message?"
+                className="col-span-2 pl-[2rem] py-[1.5rem] border border-[#384b52a2] dark:border-[#a1dcf0a2] bg-offWhite dark:bg-offBlack focus:outline-offBlack dark:focus:outline-lightBlue"
+            />
+            <div className="col-span-2 tablet:col-span-1 items-center justify-items-center grid grid-cols-2 tablet:items-start tablet:text-left gap-10">
+                <Button
+                    type="reset"
+                    text="Clear"
+                    className="btn btn__secondary border-2 whitespace-nowrap py-2 w-full"
+                    icon={faAnglesRight}
+                />
+                <Button
+                    type="submit"
+                    text="Submit"
+                    value="submit"
+                    className="btn btn__primary text-white border-offBlack dark:border-offWhite border-2 whitespace-nowrap py-2 w-full dark:bg-black"
+                    icon={faAnglesRight}
+                />
+            </div>
+        </form>
+    )
+
+      return (
         <section
             className="contact w-full bg-white dark:bg-offBlack relative py-40"
             id="contact"
@@ -71,7 +121,7 @@ const Contact = () => {
                             icon={faLocationDot}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
                         />
-                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap">
+                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap tracking-wider">
                             <span className="uppercase font-bold text-base block">
                                 Location:
                             </span>
@@ -83,7 +133,7 @@ const Contact = () => {
                             icon={faEnvelope}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
                         />
-                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap">
+                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap tracking-wider">
                             <span className="uppercase font-bold text-base block">
                                 Email:
                             </span>

@@ -27,12 +27,6 @@ export const SocialLinks = (props: any) => {
             label: "My Instagram Account",
         },
         {
-            name: "twitter",
-            link: "https://twitter.com/millersWebDev",
-            icon: faTwitter,
-            label: "My Twitter Account",
-        },
-        {
             name: "email",
             link: "mailto:charles@charlesmiller.dev",
             icon: faAt,

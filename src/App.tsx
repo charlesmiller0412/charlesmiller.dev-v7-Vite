@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import About from "./sections/about/about";
-import Contact from "./sections/contact/contact";
+import Contact from "./sections/contact";
 import { Hero } from "./sections/hero/hero";
 import { MobileNav } from "./sections/navbar/mobileNav/mobileNav";
 import { Navbar } from "./sections/navbar/navbar";
-import Projects from "./sections/projects/projects";
-import Skills from "./sections/skills/skills";
-import Blog from "./sections/blog/blog";
+import Projects from "./sections/projects";
+import Skills from "./sections/skills";
 import useThemeStore from "./appStore";
 import useFetch from "./hooks/useFetch";
 
@@ -46,10 +45,9 @@ function App() {
             </header>
             <main
                 className="overflow-x-hidden dark bg-offWhite dark:bg-black flex"
-                id="main"
+              id="main"
             >
-                <div className="hidden landscape:flex landscape:w-[7rem]"></div>
-                <div className="w-full">
+                <div className="w-full tablet:pl-[50px]">
                     <MobileNav />
                     <Hero theme={theme} projects={projects} />
                     <Projects
@@ -59,7 +57,6 @@ function App() {
                     />
                     <Skills />
                     <About />
-                    {/* <Blog /> */}
                     <Contact />
                 </div>
             </main>

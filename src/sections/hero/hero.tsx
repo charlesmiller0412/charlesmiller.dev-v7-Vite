@@ -38,22 +38,15 @@ export const Hero = (props: any) => {
                     ></path>
                 </svg>
             </div>
-            <div className="hero__main font-medium text-md tablet:text-lg desktop:text-xl text-center text-offWhite tracking-widest row-span-2 self-end">
-                <div className="font-rival dark:text-lightBlue text-lightBlue text-lg tablet:text-xl desktop:text-xxl font-semiBold grid place-items-center">
-                    <div className="typingHello w-[14rem] tablet:w-[20rem] desktop:w-[28rem]">
-                        Hello World!
-                    </div>
-                </div>
-
-                <h1 className="font-rival text-lg tablet:text-xl desktop:text-xxl font-bold tracking-widest">
-                    <span className="font-rival text-lg tablet:text-xl desktop:text-xxl font-bold tracking-widest mr-5">
-                        I'm
+            <div className="hero__main font-medium text-md tablet:text-lg desktop:text-xl text-center text-offWhite tracking-wider row-span-2 self-end">
+                <h1 className="font-rival text-lg tablet:text-xl desktop:text-xxl font-bold tracking-wider">
+                    <span className="font-rival text-lg tablet:text-xl desktop:text-xxl font-bold tracking-wider mr-5">
+                        Hello,
                     </span>
-                    Charles Miller
+                    I'm Charles
                 </h1>
-                <div className="font-light">
-                    Front-end developer | UX/UI Designer <br /> ...and this is
-                    my portfolio.
+                <div className="font-light text-base">
+                    Front-End Engineer | UX/UI Designer
                 </div>
                 <div className="hero__buttons grid grid-cols-2 desktop:gap-36 mt-10 desktop:mt-20 place-items-center">
                     <a href="#projects" className="w-fit">

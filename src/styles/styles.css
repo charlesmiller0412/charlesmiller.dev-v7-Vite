@@ -3,195 +3,183 @@
 @tailwind utilities;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
 body .dark {
-    background-color: #12252b;
+  background-color: #12252b;
 }
 
 section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 main {
-    font-family: "rival-sans-narrow", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'rival-sans-narrow', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .navbar__links {
-    overflow: visible;
+  overflow: visible;
 }
 
 .navbar__links a {
-    position: relative;
+  position: relative;
 }
 
 .navbar__links a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .active::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 150%;
-    z-index: -1;
-    left: 0.5rem;
-    top: 0;
-    overflow: visible;
-    border-radius: 5rem 0 0 5rem;
-    -webkit-border-radius: 5rem 0 0 5rem;
-    -moz-border-radius: 5rem 0 0 5rem;
-    -ms-border-radius: 5rem 0 0 5rem;
-    -o-border-radius: 5rem 0 0 5rem;
-    transform: translateY(-15%);
-    -webkit-transform: translateY(-15%);
-    -moz-transform: translateY(-15%);
-    -ms-transform: translateY(-15%);
-    -o-transform: translateY(-15%);
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 150%;
+  z-index: -1;
+  left: 0.5rem;
+  top: 0;
+  overflow: visible;
+  border-radius: 5rem 0 0 5rem;
+  -webkit-border-radius: 5rem 0 0 5rem;
+  -moz-border-radius: 5rem 0 0 5rem;
+  -ms-border-radius: 5rem 0 0 5rem;
+  -o-border-radius: 5rem 0 0 5rem;
+  transform: translateY(-15%);
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  -o-transform: translateY(-15%);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
-.typingHello {
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    -webkit-animation: typing 2s steps(22),
-        blink 0.5s step-end infinite alternate;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+.heading {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .tooltip {
-    color: #f1f1f1;
-    position: relative;
-    background-color: #384b52;
-    border-radius: 100%;
-    cursor: help;
-    text-align: center;
+  color: #f1f1f1;
+  position: relative;
+  background-color: #384b52;
+  border-radius: 100%;
+  cursor: help;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .tooltip::after {
-    position: absolute;
-    left: 50%;
-    opacity: 0;
-    transition: all ease 0.3s;
-    content: attr(data-tooltip);
-    background: rgba(0, 0, 0, 1);
-    bottom: -50%;
-    width: fit-content;
-    border-radius: 0.4rem;
-    padding: 0.25rem 0.5rem;
-    z-index: 1;
-    -webkit-border-radius: 0.4rem;
-    -moz-border-radius: 0.4rem;
-    -ms-border-radius: 0.4rem;
-    -o-border-radius: 0.4rem;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transition: all ease 0.3s;
+  content: attr(data-tooltip);
+  background: rgba(0, 0, 0, 1);
+  bottom: -70%;
+  width: fit-content;
+  border-radius: 0.4rem;
+  padding: 0.25rem 0.5rem;
+  z-index: 1;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .tooltip:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .swal2-popup button {
-    background-color: #7eaecd !important;
+  background-color: #7eaecd !important;
 }
 .swal2-popup button:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .swal2-confirm:focus {
-    box-shadow: 0 0 0 3px #a1dcf0 !important;
+  box-shadow: 0 0 0 3px #a1dcf0 !important;
 }
 
 .iOSscreen {
-    height: 100dvh;
+  height: 100dvh;
 }
 
 @layer components {
-    section {
-        @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-0 tablet:py-[5vh] landscape:tablet:pb-[10vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
-    }
+  section {
+    @apply w-screen tablet:w-full h-auto py-[5rem] landscape:py-0 tablet:py-[5vh] landscape:tablet:pb-[10vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+  }
 
-    .btn {
-        @apply py-[1rem] rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
-    }
+  .btn {
+    @apply py-[1rem] rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
+  }
 
-    .btn__primary {
-        @apply bg-blue dark:bg-offBlack dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
-    }
+  .btn__primary {
+    @apply bg-blue dark:bg-offBlack dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
+  }
 
-    .btn__secondary {
-        @apply bg-none dark:bg-none dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
-    }
+  .btn__secondary {
+    @apply bg-none dark:bg-none dark:text-offWhite transition-all hover:scale-110 hover:shadow-[0_0_5px_3px_rgba(56,75,82,.4)] dark:hover:shadow-[0_0_5px_3px_rgba(254,254,254,.4)];
+  }
 
-    .cardBtn {
-        @apply rounded-[.4rem] text-xs font-regular my-[.8rem] py-[.5rem] px-[3rem] transition-all whitespace-nowrap w-fit;
-    }
-    .cardBtn__light {
-        @apply bg-blue text-black border border-black hover:bg-lightBlue hover:text-offBlack;
-    }
+  .cardBtn {
+    @apply rounded-[.4rem] text-xs font-regular my-[.8rem] py-[.5rem] px-[3rem] transition-all whitespace-nowrap w-fit;
+  }
+  .cardBtn__light {
+    @apply bg-blue text-black border border-black hover:bg-lightBlue hover:text-offBlack;
+  }
 
-    .cardBtn__dark {
-        @apply bg-black text-lightBlue border border-lightBlue hover:bg-offBlack;
-    }
+  .cardBtn__dark {
+    @apply bg-black text-lightBlue border border-lightBlue hover:bg-offBlack;
+  }
 
-    .headings--h2 {
-        @apply text-black text-md tablet:text-lg dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem];
-    }
+  .headings--h2 {
+    @apply text-black text-md tablet:text-lg dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem];
+  }
 
-    .headings__left--h2 {
-        @apply text-offBlack mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem] relative uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem];
-    }
+  .headings__left--h2 {
+    @apply text-offBlack mb-8 tablet:mb-0 dark:text-white font-bold leading-[4rem] landscape:leading-[6.6rem] relative uppercase tracking-[.75rem] before:content-[''] before:w-[1.6rem] before:h-[.2rem] before:bg-blue before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 pl-[2.6rem];
+  }
 
-    .sun {
-        @apply text-xl text-white;
-    }
-    .moon {
-        @apply text-xl text-black;
-    }
-    h4 {
-        @apply text-sm text-blue capitalize font-medium;
-    }
-    .box {
-        @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];
-    }
-    .boxInside {
-        @apply h-[98%] w-[98%] absolute top-0 right-0;
-    }
+  .sun {
+    @apply text-xl text-white;
+  }
+  .moon {
+    @apply text-xl text-black;
+  }
+  h4 {
+    @apply text-sm text-blue capitalize font-medium;
+  }
+  .box {
+    @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];
+  }
+  .boxInside {
+    @apply h-[98%] w-[98%] absolute top-0 right-0;
+  }
 }

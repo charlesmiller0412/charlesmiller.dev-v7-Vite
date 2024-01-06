@@ -1,6 +1,6 @@
-import { Headings } from "../../components/headings";
+import { Headings } from "../components/headings";
 import { v4 as uuidv4 } from "uuid";
-import useFetch from "../../hooks/useFetch";
+import useFetch from "../hooks/useFetch";
 import Loading from "../../assets/logos/loadingLogo.webm";
 import Error from "../../assets/logos/errorDino.webm";
 
