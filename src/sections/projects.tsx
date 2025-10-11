@@ -102,7 +102,7 @@ const Projects = (props: any) => {
                     <ProjectCard key={project._id} project={project} />
                 ))}
             </div>
-            <a
+            {/* <a
                 href="https://charlesmiller.dev/projectDatabase"
                 target="__blank"
             >
@@ -111,7 +111,7 @@ const Projects = (props: any) => {
                     text="View all projects in my database"
                     icon={faAnglesRight}
                 />
-            </a>
+            </a> */}
         </section>
     );
 };
