@@ -36,6 +36,10 @@ main {
   overflow: visible;
 }
 
+.navbar:hover .navbar__right--resume {
+  width: 22rem;
+}
+
 .navbar__links a {
   position: relative;
 }
