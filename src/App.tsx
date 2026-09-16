@@ -12,11 +12,11 @@ import useFetch from "./hooks/useFetch";
 function App() {
     const theme = useThemeStore((state: any) => state.theme);
     const setTheme = useThemeStore((state: any) => state.setTheme);
-    // const {
-    //     loading,
-    //     error,
-    //     data: projects,
-    // } = useFetch("https://dbserver.onrender.com/api/projects/favorites");
+    const {
+        loading,
+        error,
+        data: projects,
+    } = useFetch("https://dbserver.onrender.com/api/projects/favorites");
 
     function handleTheme() {
         if (theme === "dark") {
@@ -39,8 +39,8 @@ function App() {
                 <Navbar
                     theme={theme}
                     setTheme={setTheme}
-                    // error={error}
-                    // loading={loading}
+                    error={error}
+                    loading={loading}
                 />
             </header>
             <main
@@ -49,12 +49,12 @@ function App() {
             >
                 <div className="w-full tablet:pl-[50px]">
                     <MobileNav />
-                    <Hero theme={theme} />
-                    {/* <Projects
+                    <Hero theme={theme} projects={projects} />
+                    <Projects
                         projects={projects}
                         error={error}
                         loading={loading}
-                    /> */}
+                    />
                     <Skills />
                     <About />
                     <Contact />
