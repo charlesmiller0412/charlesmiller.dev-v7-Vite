@@ -19,9 +19,9 @@ const project_list = [
             "TanStack Query",
         ],
         link: {
-            href: "https://github.com/charlesmiller0412/planara",
-            text: "View code",
-            icon: faGithub,
+            href: "https://planara.app",
+            text: "View site",
+            icon: faAnglesRight,
         },
     },
     {
