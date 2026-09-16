@@ -19,14 +19,14 @@ export const NavLinks = () => {
             id: "heroLink",
             icon: faHouse,
         },
+        // {
+        //     name: "my work",
+        //     link: "#projects",
+        //     id: "projectLink",
+        //     icon: faBriefcase,
+        // },
         {
-            name: "my work",
-            link: "#projects",
-            id: "projectLink",
-            icon: faBriefcase,
-        },
-        {
-            name: "my specialties",
+            name: "what i do",
             link: "#skills",
             id: "skillsLink",
             icon: faListCheck,

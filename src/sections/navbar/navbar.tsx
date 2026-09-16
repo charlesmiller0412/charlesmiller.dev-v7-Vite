@@ -11,7 +11,7 @@ export const Navbar = (props: any) => {
     return (
         <div
             id="navbar"
-            className="navbar hidden tablet:flex bg-black dark:bg-offWhite w-[7rem] hover:w-[30rem] h-screen fixed rounded-r-lg z-50 flex-col gap-20 py-[5rem] overflow-hidden justify-between transition-all"
+            className="navbar group hidden tablet:flex bg-black dark:bg-offWhite w-[7rem] hover:w-[25rem] h-screen fixed rounded-r-lg z-50 flex-col gap-20 py-[5rem] overflow-hidden justify-between transition-all"
         >
             <div className="navbar__logo--container px-[.3rem] w-[7rem] grid grid-cols-1 mx-auto">
                 <NavLogo />
@@ -32,11 +32,11 @@ export const Navbar = (props: any) => {
                         ""
                     )}
                 </div>
-                <div className="navbar__bottom--resumeLinks w-[25rem] hover:dark:text-offBlack hover:text-white text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 whitespace-nowrap items-center">
-                    <div className="navbar__bottom--resumeLinks-resume w-[7rem]">
+                <div className="navbar__bottom--resumeLinks w-[7rem] group-hover:w-[25rem] hover:dark:text-offBlack hover:text-white text-white dark:text-offBlack text-sm flex flex-col gap-3 whitespace-nowrap items-center transition-all">
+                    <div className="navbar__bottom--resumeLinks-resume w-full transition-all">
                         <ResumeBtn />
                     </div>
-                    <div className="navbar__bottom--resumeLinks-links">
+                    <div className="navbar__bottom--resumeLinks-links w-full transition-all flex justify-center">
                         <SocialLinks className="socialLinks text-icons flex gap-5 text-offWhite dark:text-offBlack" />
                     </div>
                 </div>
