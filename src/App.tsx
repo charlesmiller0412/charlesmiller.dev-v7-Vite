@@ -7,16 +7,10 @@ import { Navbar } from "./sections/navbar/navbar";
 import Projects from "./sections/projects";
 import Skills from "./sections/skills";
 import useThemeStore from "./appStore";
-import useFetch from "./hooks/useFetch";
 
 function App() {
     const theme = useThemeStore((state: any) => state.theme);
     const setTheme = useThemeStore((state: any) => state.setTheme);
-    // const {
-    //     loading,
-    //     error,
-    //     data: projects,
-    // } = useFetch("https://dbserver.onrender.com/api/projects/favorites");
 
     function handleTheme() {
         if (theme === "dark") {
@@ -50,11 +44,7 @@ function App() {
                 <div className="w-full tablet:pl-[50px]">
                     <MobileNav />
                     <Hero theme={theme} />
-                    {/* <Projects
-                        projects={projects}
-                        error={error}
-                        loading={loading}
-                    /> */}
+                    <Projects />
                     <Skills />
                     <About />
                     <Contact />

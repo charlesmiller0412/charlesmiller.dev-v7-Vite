@@ -1,89 +1,115 @@
 import { Button } from "../components/button";
 import { Headings } from "../components/headings";
-import { v4 as uuidv4 } from "uuid";
-import Loading from "../assets/logos/loadingLogo.webm";
-import Error from "../assets/logos/errorDino.webm";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faImages } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Projects = (props: any) => {
+const project_list = [
+    {
+        id: "planara",
+        title: "Planara",
+        type: "Cross-Platform App",
+        description:
+            "A cross-platform personal finance app with native iOS and Android clients and a web dashboard, all sharing a single TypeScript monorepo. Backed by Supabase with TanStack Query for data and NativeWind for styling.",
+        tech: [
+            "TypeScript",
+            "React Native",
+            "Expo",
+            "Next.js",
+            "Supabase",
+            "TanStack Query",
+        ],
+        link: {
+            href: "https://github.com/charlesmiller0412/planara",
+            text: "View code",
+            icon: faGithub,
+        },
+    },
+    {
+        id: "dutchBros",
+        title: "Dutch Bros Redesign",
+        type: "Frontend & UX",
+        description:
+            "A usability study and full visual redesign of the Dutch Bros site. Design comps were produced in Photoshop, then built out as responsive, hand-written HTML and CSS across the home, menu, shop, and story pages.",
+        tech: ["HTML", "CSS", "UX Research", "Photoshop"],
+        link: {
+            href: "/dutchbros/index.html",
+            text: "View designs",
+            icon: faImages,
+        },
+    },
+    {
+        id: "natours",
+        title: "Natours",
+        type: "Frontend",
+        description:
+            "An animated marketing landing page built to push advanced Sass techniques, featuring custom keyframe animations, clip-path shapes, and a fully responsive layout driven by the BEM methodology.",
+        tech: ["HTML", "Sass/SCSS", "BEM"],
+        link: {
+            href: "https://github.com/charlesmiller0412/natours",
+            text: "View code",
+            icon: faGithub,
+        },
+    },
+    {
+        id: "weatherApp",
+        title: "Weather App",
+        type: "Frontend",
+        description:
+            "A React weather app that pulls live conditions from a REST weather API and presents them through a clean Material UI interface with a responsive, component-driven layout.",
+        tech: ["React", "JavaScript", "Material UI", "REST API"],
+        link: {
+            href: "https://github.com/charlesmiller0412/weatherApp",
+            text: "View code",
+            icon: faGithub,
+        },
+    },
+];
 
-  const ProjectCard = (props: any) => (
-        <div className="card aspect-auto tablet:h-[26rem] tablet:w-[37rem] bg-offWhite rounded-[.4rem] flex flex-col overflow-hidden shadow-[0_4px_4px_0_rgba(0,0,0,.25)] dark:shadow-[0_4px_4px_0_rgba(255,255,255,.25)] relative">
-            {props.loading ? (
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    className="flex w-full justify-center items-center"
-                >
-                    <source
-                        src={Loading}
-                        type="video/webm"
-                        height={60}
-                        width={200}
-                    />
-                </video>
-            ) : props.error ? (
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    className="flex w-full justify-center items-center"
-                >
-                    <source
-                        src={Error}
-                        type="video/webm"
-                        height={60}
-                        width={200}
-                    />
-                </video>
-            ) : (
-                <>
-                    <picture className="card__image w-full h-5/6 relative">
-                        <img
-                            src={props.project.imgurl}
-                            alt={props.project.title}
-                            className="card__image aspect-auto"
-                            height={400}
-                            width={400}
-                        />
-                    </picture>
-                    <div className="card__links w-full flex justify-evenly self-end z-20 bg-offWhite h-[1/6]">
-                        <a href={props.project.siteurl} target="__blank">
-                            <Button
-                                className="cardBtn cardBtn__light"
-                                text="View site"
-                                icon={faAnglesRight}
-                            />
-                        </a>
-                        <a href={props.project.codeurl} target="__blank">
-                            <Button
-                                className="cardBtn cardBtn__dark"
-                                text="View code"
-                                icon={faAnglesRight}
-                            />
-                        </a>
-                    </div>
-                    <div className="card__overlay absolute top-0 left-0 w-full h-[calc(100%-15%)] tablet:h-5/6 min-h-fit bg-gradient-to-r from-cardBG to-cardBG z-10 flex justify-evenly flex-col px-5 opacity-0 active:opacity-100 hover:opacity-100 hover:cursor-crosshair transition-all tablet:portrait:justify-evenly">
-                        <span className="text-base text-blue font-semiBold leading-base">
-                            {props.project.title}
-                        </span>
-                        <p className="font-medium tablet:flex text-xs leading-0 text-white tracking-wide h-1/2 overflow-auto">
-                            {props.project.description}
-                        </p>
-                        <ul className="px-3 mb-3 grid grid-cols-3 gap-3 text-center uppercase">
-                            {props.project.languages.map((language: any) => (
-                                <li
-                                    key={uuidv4()}
-                                    className="bg-blue rounded-xl py-1 text-offBlack text-xxs"
-                                >
-                                    {language}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </>
-            )}
+const Projects = () => {
+    const renderLink = (link: any) => {
+        if (!link) {
+            return null;
+        }
+        return (
+            <a
+                href={link.href}
+                target="__blank"
+                rel="noreferrer"
+                className="card__link self-start"
+            >
+                <Button
+                    className="cardBtn cardBtn__dark flex items-center border-2 border-offBlack dark:border-offWhite rounded-[.4rem] px-8 py-2 text-offBlack dark:text-offWhite text-xs tracking-wide hover:text-blue dark:hover:text-blue transition-all"
+                    text={link.text}
+                    icon={link.icon}
+                />
+            </a>
+        );
+    };
+
+    const ProjectCard = (props: any) => (
+        <div className="card bg-offWhite dark:bg-cardBG rounded-[.4rem] flex flex-col gap-6 p-8 shadow-[0_4px_4px_0_rgba(0,0,0,.25)] dark:shadow-[0_4px_4px_0_rgba(255,255,255,.25)] h-full">
+            <div className="card__header flex flex-col gap-1">
+                <span className="text-base text-blue font-semiBold leading-base">
+                    {props.project.title}
+                </span>
+                <span className="text-xxs uppercase tracking-[.3rem] text-offBlack dark:text-offWhite">
+                    {props.project.type}
+                </span>
+            </div>
+            <p className="card__description font-medium text-xs leading-base text-offBlack dark:text-offWhite tracking-wide">
+                {props.project.description}
+            </p>
+            <ul className="card__tech grid grid-cols-2 tablet:grid-cols-3 gap-3 text-center uppercase mt-auto">
+                {props.project.tech.map((item: string) => (
+                    <li
+                        key={item}
+                        className="bg-blue rounded-xl py-1 text-offBlack text-xxs"
+                    >
+                        {item}
+                    </li>
+                ))}
+            </ul>
+            {renderLink(props.project.link)}
         </div>
     );
 
@@ -95,23 +121,24 @@ const Projects = (props: any) => {
             <Headings
                 className="w-full flex flex-col items-start mb-5 tablet:mb-[5rem]"
                 h2className="headings--h2 headings__left--h2"
-                h2="Featured Projects"
+                h2="My Work"
             />
-            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 gap-5 desktop:gap-x-28 place-items-center max-w-[120rem] m-auto min-h-full">
-                {props.projects.map((project: any) => (
-                    <ProjectCard key={project._id} project={project} />
+            <div className="projects__container grid grid-cols-1 tablet:grid-cols-2 gap-y-14 gap-5 desktop:gap-x-28 place-items-stretch max-w-[120rem] m-auto w-full">
+                {project_list.map((project) => (
+                    <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
-            {/* <a
-                href="https://charlesmiller.dev/projectDatabase"
+            <a
+                href="https://github.com/charlesmiller0412"
                 target="__blank"
+                rel="noreferrer"
             >
                 <Button
-                    className="btn__primary mx-auto text-white mt-14 flex btn btn__light--blue dark:border-offWhite border-offBlack border-2  dark:hover:text-offWhite tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
-                    text="View all projects in my database"
+                    className="btn__primary mx-auto text-white mt-14 flex btn btn__light--blue dark:border-offWhite border-offBlack border-2 dark:hover:text-offWhite tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
+                    text="See more on GitHub"
                     icon={faAnglesRight}
                 />
-            </a> */}
+            </a>
         </section>
     );
 };
